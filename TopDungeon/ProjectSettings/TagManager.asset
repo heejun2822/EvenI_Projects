@@ -2,8 +2,9 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Fighter
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Blocking
+  - Actor
   - 
   - 
   - 
@@ -41,3 +42,20 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Floor
+    uniqueID: 4044677487
+    locked: 0
+  - name: Actor
+    uniqueID: 1308121725
+    locked: 0
+  - name: Wall
+    uniqueID: 2054481543
+    locked: 0
+  - name: Interactable
+    uniqueID: 1301813977
+    locked: 0
+  - name: Weapon
+    uniqueID: 2621324693
+    locked: 0
+  m_RenderingLayers:
+  - Default
