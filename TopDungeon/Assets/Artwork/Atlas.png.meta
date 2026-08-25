@@ -222,7 +222,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 99
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1621,7 +1621,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1630,6 +1630,50 @@ TextureImporter:
       bones: []
       spriteID: e9c3237a052268243a780e93683eab19
       internalID: 1141585119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07280aa3a1c3fc4fad6f8dcfc374b4b
+      internalID: 347545429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e768fd2f195d474b9897666d06219e2
+      internalID: 14474813
       vertices: []
       indices: 
       edges: []
@@ -1707,6 +1751,7 @@ TextureImporter:
       0x72_16x16DungeonTileset.v5_8: 5940745270654208327
       0x72_16x16DungeonTileset.v5_9: -8636704302542761895
       Atlas_1: -1664533753
+      boss_0: 347545429
       chest_0: 1415495403
       chest_1: -483823
       crate_0: -852221475
@@ -1714,6 +1759,7 @@ TextureImporter:
       crate_2: -115571675
       crate_3: 1614693546
       enemy_0: -495239856
+      enemy_1: 14474813
       floor_0: 559599305
       floor_1: 101909882
       floor_10: -152330754
