@@ -1,0 +1,52 @@
+# Unity generated directories
+/Hyper_Unity/[Ll]ibrary/
+/Hyper_Unity/[Tt]emp/
+/Hyper_Unity/[Oo]bj/
+/Hyper_Unity/[Bb]uild/
+/Hyper_Unity/[Bb]uilds/
+/Hyper_Unity/[Ll]ogs/
+/Hyper_Unity/[Uu]ser[Ss]ettings/
+/Hyper_Unity/[Mm]emoryCaptures/
+/Hyper_Unity/[Rr]ecordings/
+/Hyper_Unity/ExportedObj/
+/Hyper_Unity/.gradle/
+
+# Unity-generated IDE files
+/Hyper_Unity/.vs/
+/Hyper_Unity/.idea/
+/Hyper_Unity/.vscode/
+/Hyper_Unity/*.csproj
+/Hyper_Unity/*.sln
+/Hyper_Unity/*.slnx
+/Hyper_Unity/*.suo
+/Hyper_Unity/*.user
+/Hyper_Unity/*.userprefs
+/Hyper_Unity/*.pidb
+/Hyper_Unity/*.booproj
+/Hyper_Unity/*.svd
+/Hyper_Unity/*.pdb
+/Hyper_Unity/*.mdb
+/Hyper_Unity/*.opendb
+/Hyper_Unity/*.VC.db
+
+# Unity build and export artifacts
+/Hyper_Unity/*.apk
+/Hyper_Unity/*.aab
+/Hyper_Unity/*.app
+/Hyper_Unity/*.unitypackage
+/Hyper_Unity/sysinfo.txt
+/Hyper_Unity/Assets/AssetStoreTools*
+/Hyper_Unity/Assets/StreamingAssets/aa.meta
+/Hyper_Unity/Assets/StreamingAssets/aa/
+
+# Local Graphify and Codex runtime output
+/graphify-out/
+/.graphify/
+/.codex/hooks.json
+/.codex/hooks.json.bak
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
