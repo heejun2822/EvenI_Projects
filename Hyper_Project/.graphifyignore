@@ -1,0 +1,71 @@
+# Graphify and local agent output
+/graphify-out/
+/.graphify/
+/.codex/
+
+# Unity-generated directories
+/Hyper_Unity/[Ll]ibrary/
+/Hyper_Unity/[Tt]emp/
+/Hyper_Unity/[Oo]bj/
+/Hyper_Unity/[Bb]uild/
+/Hyper_Unity/[Bb]uilds/
+/Hyper_Unity/[Ll]ogs/
+/Hyper_Unity/[Uu]ser[Ss]ettings/
+/Hyper_Unity/[Mm]emoryCaptures/
+/Hyper_Unity/[Rr]ecordings/
+/Hyper_Unity/ExportedObj/
+/Hyper_Unity/.gradle/
+
+# IDE-generated project files
+/Hyper_Unity/.vs/
+/Hyper_Unity/.idea/
+/Hyper_Unity/.vscode/
+/Hyper_Unity/*.csproj
+/Hyper_Unity/*.sln
+/Hyper_Unity/*.slnx
+/Hyper_Unity/*.suo
+/Hyper_Unity/*.user
+/Hyper_Unity/*.userprefs
+/Hyper_Unity/*.pidb
+/Hyper_Unity/*.booproj
+/Hyper_Unity/*.svd
+/Hyper_Unity/*.pdb
+/Hyper_Unity/*.mdb
+/Hyper_Unity/*.opendb
+/Hyper_Unity/*.VC.db
+
+# Generated dependency resolution data; keep manifest.json for architecture context
+/Hyper_Unity/Packages/packages-lock.json
+
+# Package-specific editor settings are not runtime architecture inputs
+/Hyper_Unity/ProjectSettings/Packages/
+
+# Unity serialized assets and importer metadata are not source-code graph inputs
+/Hyper_Unity/**/*.meta
+/Hyper_Unity/**/*.unity
+/Hyper_Unity/**/*.prefab
+/Hyper_Unity/**/*.asset
+/Hyper_Unity/**/*.mat
+/Hyper_Unity/**/*.anim
+/Hyper_Unity/**/*.controller
+/Hyper_Unity/**/*.overrideController
+/Hyper_Unity/**/*.inputactions
+/Hyper_Unity/Assets/Samples/
+/Hyper_Unity/Assets/Samples~/
+
+# Binary and media assets
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.svg
+*.mp3
+*.wav
+*.ogg
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.avi
+*.m4v
