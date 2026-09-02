@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc765bc80fd5374b8f80601ebc27192, type: 3}
+  m_Name: Stage_01
+  m_EditorClassIdentifier: Assembly-CSharp::StageData
+  formulaTiles:
+  - cell: {x: 0, y: -1, z: 0}
+    operation: 2
+    operand: 2
+  - cell: {x: 1, y: -1, z: 0}
+    operation: 0
+    operand: 6
+  - cell: {x: -1, y: 0, z: 0}
+    operation: 0
+    operand: 8
+  - cell: {x: 0, y: 0, z: 0}
+    operation: 1
+    operand: 4
+  - cell: {x: 1, y: 0, z: 0}
+    operation: 0
+    operand: 9
+  - cell: {x: -1, y: 1, z: 0}
+    operation: 2
+    operand: 3
+  - cell: {x: 0, y: 1, z: 0}
+    operation: 3
+    operand: 2
+  - cell: {x: 1, y: 1, z: 0}
+    operation: 0
+    operand: 10
+  healthTiles: []
+  startCell: {x: -1, y: -1, z: 0}
+  goalCell: {x: 2, y: 1, z: 0}
+  goalScore: 25

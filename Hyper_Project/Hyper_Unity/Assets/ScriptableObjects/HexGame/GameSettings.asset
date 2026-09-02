@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cf7ea9806ac2f94d83764ac77391fdb, type: 3}
+  m_Name: GameSettings
+  m_EditorClassIdentifier: Assembly-CSharp::GameSettings
+  initialScore: 0
+  initialHealth: 100
+  moveTimeLimit: 7
+  overtimeHealthLossPerSecond: 2
+  stages:
+  - {fileID: 11400000, guid: 5b9ba9bc97ee1ee46aa195cf404422bc, type: 2}
+  - {fileID: 11400000, guid: 7873acc3a3dc256498a415bcf93601d4, type: 2}
+  - {fileID: 11400000, guid: 80e76b9f0aa2b584e80bb446061cf33b, type: 2}
+  - {fileID: 11400000, guid: 4559a3737e901bb4e8fa816e97b0a65c, type: 2}
+  - {fileID: 11400000, guid: 42c53abb446674948bbabe0172f19a1e, type: 2}

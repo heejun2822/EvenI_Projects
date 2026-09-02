@@ -1,0 +1,25 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/respin/6000.3.5f1-a1ec4b2f2d19' branch; Version is '6000.3.5f2 (3fa8bc678cb0) revision 4171964'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Core' Language: 'ko' Physical Memory: 24267 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-09-02T08:18:57Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ASUS" at "2026-09-02T08:18:57.159709Z"
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+C:\Users\ASUS\Documents\EvenI\EvenI_Projects\Hyper_Project\Hyper_Unity
+-runTests
+-testPlatform
+EditMode
+-testResults
+C:\Users\ASUS\Documents\EvenI\EvenI_Projects\Hyper_Project\Hyper_Unity\TestResults_EditMode.xml
+-logFile
+C:\Users\ASUS\Documents\EvenI\EvenI_Projects\Hyper_Project\Hyper_Unity\Unity_EditMode.log
+Successfully changed project path to: C:\Users\ASUS\Documents\EvenI\EvenI_Projects\Hyper_Project\Hyper_Unity
+C:/Users/ASUS/Documents/EvenI/EvenI_Projects/Hyper_Project/Hyper_Unity
+Exiting without the bug reporter. Application will terminate with return code 1
