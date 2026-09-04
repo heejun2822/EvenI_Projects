@@ -406,7 +406,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RESTART
+  m_text: HOME
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -1478,7 +1478,7 @@ MonoBehaviour:
   - {fileID: 1060284644}
   gameOverPanel: {fileID: 1239490353}
   clearPanel: {fileID: 685540891}
-  restartButtons:
+  homeButtons:
   - {fileID: 1839563450}
   - {fileID: 937175512}
 --- !u!114 &837483692
@@ -1949,7 +1949,7 @@ GameObject:
   - component: {fileID: 937175513}
   - component: {fileID: 937175512}
   m_Layer: 0
-  m_Name: Restart
+  m_Name: Home
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2249,7 +2249,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RESTART
+  m_text: HOME
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -3608,7 +3608,7 @@ GameObject:
   - component: {fileID: 1839563451}
   - component: {fileID: 1839563450}
   m_Layer: 0
-  m_Name: Restart
+  m_Name: Home
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -31,7 +31,7 @@ public class HexGameController : BaseSceneDirector
     [SerializeField] private Button[] formulaButtons;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject clearPanel;
-    [SerializeField] private Button[] restartButtons;
+    [SerializeField] private Button[] homeButtons;
 
     private HexGameFlow gameFlow;
     private CameraPanZoom cameraPanZoom;
@@ -80,7 +80,7 @@ public class HexGameController : BaseSceneDirector
         HexStageController stageController = new(tilemap, player, boardView, cameraPanZoom);
         HexPlayerController playerController = new(mainCamera, tilemap, stageController);
         playerController.Bind(gestureInput);
-        HexGameUi ui = new(scoreText, healthText, goalText, timerText, formulaButtons, gameOverPanel, clearPanel, restartButtons);
+        HexGameUi ui = new(scoreText, healthText, goalText, timerText, formulaButtons, gameOverPanel, clearPanel, homeButtons);
         return new HexGameFlow(session, stageController, playerController, ui);
     }
 
@@ -101,7 +101,7 @@ public class HexGameController : BaseSceneDirector
         if (gameSettings != null && tilemap != null && normalTile != null && player != null && mainCamera != null &&
             formulaLabelPrefab != null && glowPrefab != null && labelRoot != null && glowRoot != null &&
             scoreText != null && healthText != null && goalText != null && timerText != null && formulaButtons != null &&
-            gameOverPanel != null && clearPanel != null && restartButtons != null)
+            gameOverPanel != null && clearPanel != null && homeButtons != null)
         {
             return true;
         }

@@ -1,4 +1,5 @@
 using System;
+using UnityEngine.SceneManagement;
 
 /// <summary>Owns the game-flow transitions for one running game session.</summary>
 public sealed class HexGameFlow : IDisposable
@@ -16,7 +17,7 @@ public sealed class HexGameFlow : IDisposable
         this.ui = ui;
 
         playerController.Moved += HandlePlayerMove;
-        ui.Bind(UseStoredFormula, RestartGame);
+        ui.Bind(UseStoredFormula, ReturnToTitle);
     }
 
     public void Start()
@@ -54,6 +55,11 @@ public sealed class HexGameFlow : IDisposable
         session.StartGame();
         ui.HideResultPanels();
         LoadCurrentStage();
+    }
+
+    private void ReturnToTitle()
+    {
+        SceneManager.LoadScene("Title");
     }
 
     private void LoadCurrentStage()

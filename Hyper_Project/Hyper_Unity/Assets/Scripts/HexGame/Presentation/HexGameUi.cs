@@ -19,10 +19,10 @@ public sealed class HexGameUi
     private readonly TextMeshProUGUI[] formulaTexts;
     private readonly GameObject gameOverPanel;
     private readonly GameObject clearPanel;
-    private readonly Button[] restartButtons;
+    private readonly Button[] homeButtons;
 
     public HexGameUi(TextMeshProUGUI scoreText, TextMeshProUGUI healthText, TextMeshProUGUI goalText, TextMeshProUGUI timerText,
-        Button[] formulaButtons, GameObject gameOverPanel, GameObject clearPanel, Button[] restartButtons)
+        Button[] formulaButtons, GameObject gameOverPanel, GameObject clearPanel, Button[] homeButtons)
     {
         this.scoreText = scoreText;
         this.healthText = healthText;
@@ -31,7 +31,7 @@ public sealed class HexGameUi
         this.formulaButtons = formulaButtons;
         this.gameOverPanel = gameOverPanel;
         this.clearPanel = clearPanel;
-        this.restartButtons = restartButtons;
+        this.homeButtons = homeButtons;
         timerBasePosition = timerText.rectTransform.anchoredPosition;
 
         formulaTexts = new TextMeshProUGUI[formulaButtons.Length];
@@ -41,7 +41,7 @@ public sealed class HexGameUi
         }
     }
 
-    public void Bind(Action<int> useFormula, Action restart)
+    public void Bind(Action<int> useFormula, Action goHome)
     {
         for (int index = 0; index < formulaButtons.Length; index++)
         {
@@ -49,9 +49,9 @@ public sealed class HexGameUi
             formulaButtons[index].onClick.AddListener(() => useFormula(buttonIndex));
         }
 
-        foreach (Button restartButton in restartButtons)
+        foreach (Button homeButton in homeButtons)
         {
-            restartButton.onClick.AddListener(restart.Invoke);
+            homeButton.onClick.AddListener(goHome.Invoke);
         }
     }
 
