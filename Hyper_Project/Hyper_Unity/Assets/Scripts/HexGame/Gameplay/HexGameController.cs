@@ -4,7 +4,7 @@ using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
 /// <summary>Coordinates game-flow transitions between independently focused gameplay services.</summary>
-public class HexGameController : MonoBehaviour
+public class HexGameController : BaseSceneDirector
 {
     [Header("Scene References")]
     [SerializeField] private GameSettings gameSettings;
@@ -36,26 +36,33 @@ public class HexGameController : MonoBehaviour
     private HexGameFlow gameFlow;
     private CameraPanZoom cameraPanZoom;
 
-    private void Awake()
+    protected override bool InitializeScene()
     {
         if (!HasRequiredReferences() || !TryGetGestureInput(out PointerGestureInput gestureInput))
         {
-            enabled = false;
-            return;
+            return false;
         }
 
+        gestureInput.Initialize();
         gameFlow = CreateGameFlow(gestureInput);
         gameFlow.Start();
+        return true;
     }
 
-    private void OnDestroy()
+    protected override void OnDestroy()
     {
         gameFlow?.Dispose();
         cameraPanZoom?.UnbindGestureInput();
+        base.OnDestroy();
     }
 
     private void Update()
     {
+        if (!IsInitialized)
+        {
+            return;
+        }
+
         gameFlow?.Tick(Time.deltaTime);
     }
 

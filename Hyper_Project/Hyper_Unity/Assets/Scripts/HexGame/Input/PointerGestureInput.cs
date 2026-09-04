@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-public class PointerGestureInput : MonoBehaviour
+public class PointerGestureInput : BaseEntity
 {
     [SerializeField] private float dragThreshold = 15f;
 
@@ -22,16 +22,27 @@ public class PointerGestureInput : MonoBehaviour
     private Vector2 pressPosition;
     private Vector2 previousPosition;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         inputActions = new PlayerInputActions();
         clickAction = inputActions.Player.Click;
         pointerPositionAction = inputActions.Player.PointerPosition;
         zoomAction = inputActions.Player.Zoom;
     }
 
+    public void Initialize()
+    {
+        CompleteInitialization();
+    }
+
     private void OnEnable()
     {
+        if (inputActions == null)
+        {
+            return;
+        }
+
         inputActions.Enable();
         clickAction.started += OnClickStarted;
         clickAction.canceled += OnClickCanceled;
@@ -46,6 +57,11 @@ public class PointerGestureInput : MonoBehaviour
 
     private void OnDisable()
     {
+        if (inputActions == null)
+        {
+            return;
+        }
+
         clickAction.started -= OnClickStarted;
         clickAction.canceled -= OnClickCanceled;
         pointerPositionAction.performed -= OnPointerPosition;
@@ -55,7 +71,7 @@ public class PointerGestureInput : MonoBehaviour
 
     private void OnDestroy()
     {
-        inputActions.Dispose();
+        inputActions?.Dispose();
     }
 
     private void OnClickStarted(InputAction.CallbackContext context)

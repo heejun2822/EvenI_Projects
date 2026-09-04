@@ -13,6 +13,7 @@ public sealed class HexGameRuleTests
         tests.MoveTimer_ReportsExpirationWithoutChangingGameState();
         tests.GetCellsOnAnyPath_ExcludesDeadEndBranches();
         tests.StageValidation_RejectsBoardsWithoutARouteToTheGoal();
+        tests.EventBus_PublishesFactsToSubscribedListener();
     }
 
     [Test]
@@ -100,6 +101,34 @@ public sealed class HexGameRuleTests
         finally
         {
             Object.DestroyImmediate(stage);
+        }
+    }
+
+    [Test]
+    public void EventBus_PublishesFactsToSubscribedListener()
+    {
+        int receivedValue = 0;
+        System.Action<TestFactEvent> listener = payload => receivedValue = payload.Value;
+        EventBus<TestFactEvent>.Subscribe(listener);
+        try
+        {
+            EventBus<TestFactEvent>.Publish(new TestFactEvent(42));
+
+            Assert.That(receivedValue, Is.EqualTo(42));
+        }
+        finally
+        {
+            EventBus<TestFactEvent>.Unsubscribe(listener);
+        }
+    }
+
+    private readonly struct TestFactEvent
+    {
+        public int Value { get; }
+
+        public TestFactEvent(int value)
+        {
+            Value = value;
         }
     }
 }
