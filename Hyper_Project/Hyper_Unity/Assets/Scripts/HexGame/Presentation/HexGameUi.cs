@@ -15,6 +15,7 @@ public sealed class HexGameUi
     private readonly TextMeshProUGUI goalText;
     private readonly TextMeshProUGUI timerText;
     private readonly Vector2 timerBasePosition;
+    private readonly Color healthTextBaseColor;
     private readonly Button[] formulaButtons;
     private readonly TextMeshProUGUI[] formulaTexts;
     private readonly GameObject gameOverPanel;
@@ -33,6 +34,7 @@ public sealed class HexGameUi
         this.clearPanel = clearPanel;
         this.homeButtons = homeButtons;
         timerBasePosition = timerText.rectTransform.anchoredPosition;
+        healthTextBaseColor = healthText.color;
 
         formulaTexts = new TextMeshProUGUI[formulaButtons.Length];
         for (int index = 0; index < formulaButtons.Length; index++)
@@ -94,6 +96,7 @@ public sealed class HexGameUi
     public void RefreshTimer(float remaining)
     {
         bool isWarning = remaining <= WarningSeconds;
+        healthText.color = remaining <= 0f ? new Color(1f, .2f, .2f) : healthTextBaseColor;
         timerText.gameObject.SetActive(true);
         timerText.text = Mathf.CeilToInt(Mathf.Max(0f, remaining)).ToString();
         timerText.color = isWarning ? new Color(1f, .2f, .2f) : Color.black;
