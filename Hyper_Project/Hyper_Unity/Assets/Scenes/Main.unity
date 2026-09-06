@@ -511,6 +511,7 @@ GameObject:
   - component: {fileID: 208427370}
   - component: {fileID: 208427372}
   - component: {fileID: 208427371}
+  - component: {fileID: 208427373}
   m_Layer: 0
   m_Name: Health
   m_TagString: Untagged
@@ -530,7 +531,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 669498189}
+  m_Father: {fileID: 669498196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -637,6 +638,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208427369}
   m_CullTransparentMesh: 1
+--- !u!114 &208427373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208427369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92d4fc7ad3f34169acf4e67cc6260735, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::HexHealthText
 --- !u!1 &314929821
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,7 +979,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b423949da6ce849a8eddad14e387ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraPanZoom
-  targetCamera: {fileID: 519420031}
   panSpeed: 0.001
   zoomSpeed: 0.2
   minimumZoom: 3
@@ -1104,7 +1116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &629057133
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1117,7 +1129,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 669498189}
+  m_Father: {fileID: 669498206}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1319,15 +1331,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 889492687}
-  - {fileID: 1643604799}
-  - {fileID: 208427370}
-  - {fileID: 629057133}
-  - {fileID: 949665184}
-  - {fileID: 1993131202}
-  - {fileID: 1060284643}
-  - {fileID: 1239490354}
-  - {fileID: 685540892}
+  - {fileID: 669498196}
+  - {fileID: 669498198}
+  - {fileID: 669498208}
+  - {fileID: 669498210}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1347,6 +1354,278 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52da117ca4e947d6a3bb2fc8d9ce1120, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::SafeAreaFitter
+--- !u!1 &669498195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 669498196}
+  m_Layer: 0
+  m_Name: HUD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &669498196
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669498195}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 889492687}
+  - {fileID: 1643604799}
+  - {fileID: 208427370}
+  - {fileID: 669498206}
+  m_Father: {fileID: 669498189}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &669498197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 669498198}
+  - component: {fileID: 669498202}
+  - component: {fileID: 669498203}
+  - component: {fileID: 669498204}
+  m_Layer: 0
+  m_Name: Formulas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &669498198
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669498197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 949665184}
+  - {fileID: 1993131202}
+  - {fileID: 1060284643}
+  m_Father: {fileID: 669498189}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &669498202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669498197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a673a032bb42929c3fec262c01bb4b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::HexFormulaButton
+  formulaIndex: 0
+  formulaObject: {fileID: 949665183}
+--- !u!114 &669498203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669498197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a673a032bb42929c3fec262c01bb4b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::HexFormulaButton
+  formulaIndex: 1
+  formulaObject: {fileID: 1993131201}
+--- !u!114 &669498204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669498197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a673a032bb42929c3fec262c01bb4b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::HexFormulaButton
+  formulaIndex: 2
+  formulaObject: {fileID: 1060284642}
+--- !u!1 &669498205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 669498206}
+  - component: {fileID: 669498211}
+  m_Layer: 0
+  m_Name: TimerController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &669498206
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669498205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 629057133}
+  m_Father: {fileID: 669498196}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &669498211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669498205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd990347ea249d596ceaa5fe476aa7c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::HexTimerText
+  timerObject: {fileID: 629057132}
+--- !u!1 &669498207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 669498208}
+  - component: {fileID: 669498212}
+  m_Layer: 0
+  m_Name: GameOverPanelController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &669498208
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669498207}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1239490354}
+  m_Father: {fileID: 669498189}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &669498212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669498207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8dc8a9f75d1432d9dbcd24c300a73b2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::HexGameOverPanel
+  panelObject: {fileID: 1239490353}
+--- !u!1 &669498209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 669498210}
+  - component: {fileID: 669498213}
+  m_Layer: 0
+  m_Name: ClearPanelController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &669498210
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669498209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 685540892}
+  m_Father: {fileID: 669498189}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &669498213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669498209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d82e1cebef41ca9a60637a742948e8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::HexClearPanel
+  panelObject: {fileID: 685540891}
 --- !u!1 &685540891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,7 +1658,7 @@ RectTransform:
   m_Children:
   - {fileID: 846941935}
   - {fileID: 937175511}
-  m_Father: {fileID: 669498189}
+  m_Father: {fileID: 669498210}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1449,6 +1728,8 @@ GameObject:
   - component: {fileID: 837483693}
   - component: {fileID: 837483692}
   - component: {fileID: 837483691}
+  - component: {fileID: 837483695}
+  - component: {fileID: 837483696}
   m_Layer: 0
   m_Name: HexGameRuntime
   m_TagString: Untagged
@@ -1469,10 +1750,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HexGameController
   gameSettings: {fileID: 11400000, guid: 9a2f9c03cadae7e40a107a7b0f7c1e06, type: 2}
+  playerController: {fileID: 2053347230}
+--- !u!114 &837483695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837483690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e639729ec55a914dbd427bbf36e6879, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::HexBoardView
   tilemap: {fileID: 1448214973}
   normalTile: {fileID: 11400000, guid: e3993e08d5358f945afb4025b8cbc8b4, type: 2}
-  player: {fileID: 2053347229}
-  mainCamera: {fileID: 519420031}
   formulaLabelPrefab: {fileID: 499006947585256677, guid: 1ea5f6a48ee0ead4a8f3951ff4b8afaa, type: 3}
   glowPrefab: {fileID: 3678864560303557393, guid: 457ceb283559b7e47afdce778754361d, type: 3}
   labelRoot: {fileID: 1318063823}
@@ -1481,19 +1773,20 @@ MonoBehaviour:
   goalTileColor: {r: 1, g: 0.45, b: 0.45, a: 1}
   healthTileColor: {r: 0.3, g: 0.85, b: 0.5, a: 1}
   unavailableTileColor: {r: 0.32, g: 0.32, b: 0.32, a: 1}
-  scoreText: {fileID: 1643604800}
-  healthText: {fileID: 208427371}
-  goalText: {fileID: 889492688}
-  timerText: {fileID: 629057134}
-  formulaButtons:
-  - {fileID: 949665185}
-  - {fileID: 1993131203}
-  - {fileID: 1060284644}
-  gameOverPanel: {fileID: 1239490353}
-  clearPanel: {fileID: 685540891}
-  homeButtons:
-  - {fileID: 1839563450}
-  - {fileID: 937175512}
+--- !u!114 &837483696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837483690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9c38131c534464eab9e2f318c5c6a9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::HexStageController
+  mainCamera: {fileID: 519420031}
+  playerController: {fileID: 2053347230}
 --- !u!114 &837483692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1507,6 +1800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PointerGestureInput
   dragThreshold: 15
+  pinchZoomScale: 0.02
 --- !u!4 &837483693
 Transform:
   m_ObjectHideFlags: 0
@@ -1672,6 +1966,7 @@ GameObject:
   - component: {fileID: 889492687}
   - component: {fileID: 889492689}
   - component: {fileID: 889492688}
+  - component: {fileID: 889492690}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Untagged
@@ -1691,7 +1986,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 669498189}
+  m_Father: {fileID: 669498196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1798,6 +2093,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889492686}
   m_CullTransparentMesh: 1
+--- !u!114 &889492690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889492686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ae0c8995ad3412693e006e85e3d3d64, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::HexGoalText
 --- !u!114 &900260479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2088,7 +2395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &949665184
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2102,7 +2409,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 314929822}
-  m_Father: {fileID: 669498189}
+  m_Father: {fileID: 669498198}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.33333334, y: 0}
@@ -2360,7 +2667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1060284643
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2374,7 +2681,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2126726593}
-  m_Father: {fileID: 669498189}
+  m_Father: {fileID: 669498198}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6666667, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -2495,7 +2802,7 @@ RectTransform:
   m_Children:
   - {fileID: 88194525}
   - {fileID: 1839563449}
-  m_Father: {fileID: 669498189}
+  m_Father: {fileID: 669498208}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3468,6 +3775,7 @@ GameObject:
   - component: {fileID: 1643604799}
   - component: {fileID: 1643604801}
   - component: {fileID: 1643604800}
+  - component: {fileID: 1643604802}
   m_Layer: 0
   m_Name: Score
   m_TagString: Untagged
@@ -3487,7 +3795,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 669498189}
+  m_Father: {fileID: 669498196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -3594,6 +3902,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643604798}
   m_CullTransparentMesh: 1
+--- !u!114 &1643604802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643604798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873d4038ad2348a491c156801493a2c2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::HexScoreText
 --- !u!114 &1748773250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3747,7 +4067,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1993131202
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3761,7 +4081,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 924142982}
-  m_Father: {fileID: 669498189}
+  m_Father: {fileID: 669498198}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.33333334, y: 0}
   m_AnchorMax: {x: 0.6666667, y: 0}
@@ -3860,6 +4180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2053347229}
   - component: {fileID: 2053347228}
+  - component: {fileID: 2053347230}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3941,6 +4262,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2053347230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053347227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a4db7c8860a674ca2edb4d71c4cbd5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::HexPlayerController
+  stageController: {fileID: 837483696}
 --- !u!1 &2126726592
 GameObject:
   m_ObjectHideFlags: 0

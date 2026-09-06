@@ -10,10 +10,6 @@ public class PointerGestureInput : BaseEntity
     [SerializeField] private float dragThreshold = 15f;
     [SerializeField] private float pinchZoomScale = .02f;
 
-    public event Action<Vector2> Tapped;
-    public event Action<Vector2> Dragged;
-    public event Action<Vector2> Zoomed;
-
     private PlayerInputActions inputActions;
     private InputAction clickAction;
     private InputAction pointerPositionAction;
@@ -96,7 +92,7 @@ public class PointerGestureInput : BaseEntity
     {
         if (isPressed && !isDragging && !gestureStartedOverUi && !isPointerOverUi)
         {
-            Tapped?.Invoke(pointerPositionAction.ReadValue<Vector2>());
+            EventBus<PointerTappedEvent>.Publish(new PointerTappedEvent(pointerPositionAction.ReadValue<Vector2>()));
         }
         isPressed = false;
     }
@@ -115,7 +111,7 @@ public class PointerGestureInput : BaseEntity
         }
         if (isDragging)
         {
-            Dragged?.Invoke(position - previousPosition);
+            EventBus<PointerDraggedEvent>.Publish(new PointerDraggedEvent(position - previousPosition));
         }
         previousPosition = position;
     }
@@ -124,7 +120,7 @@ public class PointerGestureInput : BaseEntity
     {
         if (!isPointerOverUi)
         {
-            Zoomed?.Invoke(context.ReadValue<Vector2>());
+            EventBus<PointerZoomedEvent>.Publish(new PointerZoomedEvent(context.ReadValue<Vector2>()));
         }
     }
 
@@ -150,7 +146,8 @@ public class PointerGestureInput : BaseEntity
 
         if (!pinchStartedOverUi)
         {
-            Zoomed?.Invoke(new Vector2(0f, (pinchDistance - previousPinchDistance) * pinchZoomScale));
+            EventBus<PointerZoomedEvent>.Publish(
+                new PointerZoomedEvent(new Vector2(0f, (pinchDistance - previousPinchDistance) * pinchZoomScale)));
         }
 
         previousPinchDistance = pinchDistance;

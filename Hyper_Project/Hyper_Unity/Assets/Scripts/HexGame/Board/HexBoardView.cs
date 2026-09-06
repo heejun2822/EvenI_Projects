@@ -4,35 +4,24 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 /// <summary>Renders the tilemap, formula labels, and move glows for a board state.</summary>
-public sealed class HexBoardView
+public sealed class HexBoardView : MonoBehaviour
 {
-    private readonly Tilemap tilemap;
-    private readonly TileBase normalTile;
-    private readonly TextMeshPro formulaLabelPrefab;
-    private readonly SpriteRenderer glowPrefab;
-    private readonly Transform labelRoot;
-    private readonly Transform glowRoot;
-    private readonly Color defaultTileColor;
-    private readonly Color goalTileColor;
-    private readonly Color healthTileColor;
-    private readonly Color unavailableTileColor;
+    [SerializeField] private Tilemap tilemap;
+    [SerializeField] private TileBase normalTile;
+    [SerializeField] private TextMeshPro formulaLabelPrefab;
+    [SerializeField] private SpriteRenderer glowPrefab;
+    [SerializeField] private Transform labelRoot;
+    [SerializeField] private Transform glowRoot;
+    [SerializeField] private Color defaultTileColor = new(.87f, .72f, .21f);
+    [SerializeField] private Color goalTileColor = new(1f, .45f, .45f);
+    [SerializeField] private Color healthTileColor = new(.3f, .85f, .5f);
+    [SerializeField] private Color unavailableTileColor = new(.32f, .32f, .32f);
     private readonly Dictionary<Vector3Int, TextMeshPro> labels = new();
     private readonly List<SpriteRenderer> glows = new();
 
-    public HexBoardView(Tilemap tilemap, TileBase normalTile, TextMeshPro formulaLabelPrefab, SpriteRenderer glowPrefab,
-        Transform labelRoot, Transform glowRoot, Color defaultTileColor, Color goalTileColor, Color healthTileColor, Color unavailableTileColor)
-    {
-        this.tilemap = tilemap;
-        this.normalTile = normalTile;
-        this.formulaLabelPrefab = formulaLabelPrefab;
-        this.glowPrefab = glowPrefab;
-        this.labelRoot = labelRoot;
-        this.glowRoot = glowRoot;
-        this.defaultTileColor = defaultTileColor;
-        this.goalTileColor = goalTileColor;
-        this.healthTileColor = healthTileColor;
-        this.unavailableTileColor = unavailableTileColor;
-    }
+    public Tilemap Tilemap => tilemap;
+    public bool IsConfigured => tilemap != null && normalTile != null && formulaLabelPrefab != null && glowPrefab != null &&
+        labelRoot != null && glowRoot != null;
 
     public void Build(HexBoardState board)
     {

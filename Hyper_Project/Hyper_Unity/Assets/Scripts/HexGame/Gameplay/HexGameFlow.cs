@@ -1,5 +1,4 @@
 using System;
-using UnityEngine.SceneManagement;
 
 /// <summary>Owns the game-flow transitions for one running game session.</summary>
 public sealed class HexGameFlow : IDisposable
@@ -7,17 +6,15 @@ public sealed class HexGameFlow : IDisposable
     private readonly HexGameSession session;
     private readonly HexStageController stageController;
     private readonly HexPlayerController playerController;
-    private readonly HexGameUi ui;
 
-    public HexGameFlow(HexGameSession session, HexStageController stageController, HexPlayerController playerController, HexGameUi ui)
+    public HexGameFlow(HexGameSession session, HexStageController stageController, HexPlayerController playerController)
     {
         this.session = session;
         this.stageController = stageController;
         this.playerController = playerController;
-        this.ui = ui;
-
-        playerController.Moved += HandlePlayerMove;
-        ui.Bind(UseStoredFormula, ReturnToTitle);
+        EventBus<PlayerMovedEvent>.Subscribe(HandlePlayerMove);
+        EventBus<FormulaSelectedEvent>.Subscribe(UseStoredFormula);
+        EventBus<ReturnToTitleRequestedEvent>.Subscribe(ReturnToTitle);
     }
 
     public void Start()
@@ -34,10 +31,10 @@ public sealed class HexGameFlow : IDisposable
 
         if (session.Tick(deltaTime))
         {
-            ui.RefreshHealth(session.State);
+            PublishHealth();
         }
 
-        ui.RefreshTimer(session.RemainingMoveTime);
+        PublishTimer();
         if (session.State.Health <= 0f)
         {
             EndWithGameOver();
@@ -46,20 +43,21 @@ public sealed class HexGameFlow : IDisposable
 
     public void Dispose()
     {
-        playerController.Moved -= HandlePlayerMove;
-        playerController.Dispose();
+        EventBus<PlayerMovedEvent>.Unsubscribe(HandlePlayerMove);
+        EventBus<FormulaSelectedEvent>.Unsubscribe(UseStoredFormula);
+        EventBus<ReturnToTitleRequestedEvent>.Unsubscribe(ReturnToTitle);
     }
 
     private void RestartGame()
     {
         session.StartGame();
-        ui.HideResultPanels();
+        EventBus<GameResultChangedEvent>.Publish(new GameResultChangedEvent(HexGameResult.None));
         LoadCurrentStage();
     }
 
-    private void ReturnToTitle()
+    private void ReturnToTitle(ReturnToTitleRequestedEvent payload)
     {
-        SceneManager.LoadScene("Title");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Title");
     }
 
     private void LoadCurrentStage()
@@ -75,12 +73,13 @@ public sealed class HexGameFlow : IDisposable
         stageController.Load(stage);
         playerController.IsInputEnabled = true;
         session.StartMoveTimer();
-        ui.RefreshStage(session.State, stage);
-        ui.RefreshTimer(session.RemainingMoveTime);
+        PublishState(stage);
+        PublishTimer();
     }
 
-    private void HandlePlayerMove(HexMoveResult move)
+    private void HandlePlayerMove(PlayerMovedEvent payload)
     {
+        HexMoveResult move = payload.Move;
         if (move.ReachedGoal)
         {
             CompleteCurrentStage();
@@ -89,7 +88,7 @@ public sealed class HexGameFlow : IDisposable
 
         ApplyMoveReward(move);
         session.StartMoveTimer();
-        ui.RefreshTimer(session.RemainingMoveTime);
+        PublishTimer();
     }
 
     private void ApplyMoveReward(HexMoveResult move)
@@ -98,36 +97,36 @@ public sealed class HexGameFlow : IDisposable
         {
             if (!session.State.Acquire(move.Formula))
             {
-                ui.RefreshScore(session.State);
+                PublishScore();
             }
 
-            ui.RefreshFormulas(session.State);
+            PublishFormulas();
             return;
         }
 
         if (move.HasHealth)
         {
             session.RestoreHealth(move.HealthAmount);
-            ui.RefreshHealth(session.State);
+            PublishHealth();
         }
     }
 
-    private void UseStoredFormula(int index)
+    private void UseStoredFormula(FormulaSelectedEvent payload)
     {
-        if (!playerController.IsInputEnabled || !session.State.TryApplyStoredFormula(index))
+        if (!playerController.IsInputEnabled || !session.State.TryApplyStoredFormula(payload.Index))
         {
             return;
         }
 
-        ui.RefreshScore(session.State);
-        ui.RefreshFormulas(session.State);
+        PublishScore();
+        PublishFormulas();
     }
 
     private void CompleteCurrentStage()
     {
         playerController.IsInputEnabled = false;
         StageCompletion completion = session.CompleteStage();
-        ui.RefreshHealth(session.State);
+        PublishHealth();
         switch (completion)
         {
             case StageCompletion.NextStage:
@@ -146,15 +145,29 @@ public sealed class HexGameFlow : IDisposable
     {
         playerController.IsInputEnabled = false;
         session.StopMoveTimer();
-        ui.StopTimer();
-        ui.ShowGameOver();
+        EventBus<TimerStoppedEvent>.Publish(new TimerStoppedEvent());
+        EventBus<GameResultChangedEvent>.Publish(new GameResultChangedEvent(HexGameResult.GameOver));
     }
 
     private void EndWithClear()
     {
         playerController.IsInputEnabled = false;
         session.StopMoveTimer();
-        ui.StopTimer();
-        ui.ShowClear();
+        EventBus<TimerStoppedEvent>.Publish(new TimerStoppedEvent());
+        EventBus<GameResultChangedEvent>.Publish(new GameResultChangedEvent(HexGameResult.Cleared));
     }
+
+    private void PublishState(StageData stage)
+    {
+        PublishScore();
+        PublishHealth();
+        EventBus<GoalChangedEvent>.Publish(new GoalChangedEvent(stage.GoalScore));
+        PublishFormulas();
+    }
+
+    private void PublishScore() => EventBus<ScoreChangedEvent>.Publish(new ScoreChangedEvent(session.State.Score));
+    private void PublishHealth() => EventBus<HealthChangedEvent>.Publish(new HealthChangedEvent(session.State.Health));
+    private void PublishFormulas() => EventBus<FormulaInventoryChangedEvent>.Publish(
+        new FormulaInventoryChangedEvent(session.State.StoredFormulas));
+    private void PublishTimer() => EventBus<TimerChangedEvent>.Publish(new TimerChangedEvent(session.RemainingMoveTime));
 }

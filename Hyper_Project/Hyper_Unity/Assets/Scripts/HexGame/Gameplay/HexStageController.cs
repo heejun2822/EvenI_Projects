@@ -1,29 +1,27 @@
 using UnityEngine;
-using UnityEngine.Tilemaps;
-
 /// <summary>Loads a stage and maintains its board, player world position, and camera framing.</summary>
-public sealed class HexStageController
+public sealed class HexStageController : MonoBehaviour
 {
-    private readonly Tilemap tilemap;
-    private readonly Transform player;
-    private readonly HexBoardView boardView;
-    private readonly CameraPanZoom cameraPanZoom;
+    [SerializeField] private Camera mainCamera;
+    [SerializeField] private HexPlayerController playerController;
+
+    private HexBoardView boardView;
+    private CameraPanZoom cameraPanZoom;
 
     public HexBoardState Board { get; private set; }
+    public bool IsConfigured => mainCamera != null && playerController != null && boardView != null && boardView.IsConfigured;
 
-    public HexStageController(Tilemap tilemap, Transform player, HexBoardView boardView, CameraPanZoom cameraPanZoom)
+    private void Awake()
     {
-        this.tilemap = tilemap;
-        this.player = player;
-        this.boardView = boardView;
-        this.cameraPanZoom = cameraPanZoom;
+        boardView = GetComponent<HexBoardView>();
+        cameraPanZoom = mainCamera != null ? mainCamera.GetComponent<CameraPanZoom>() : null;
     }
 
     public void Load(StageData stage)
     {
         Board = new HexBoardState(stage);
         boardView.Build(Board);
-        player.position = tilemap.GetCellCenterWorld(Board.CurrentCell);
+        playerController.SetWorldPosition(boardView.Tilemap.GetCellCenterWorld(Board.CurrentCell));
         ResetCamera();
         RefreshBoard();
     }
@@ -36,7 +34,7 @@ public sealed class HexStageController
             return false;
         }
 
-        player.position = tilemap.GetCellCenterWorld(Board.CurrentCell);
+        playerController.SetWorldPosition(boardView.Tilemap.GetCellCenterWorld(Board.CurrentCell));
         boardView.RemoveTile(previousCell);
         if (Board.IsGoal(Board.CurrentCell))
         {
@@ -58,6 +56,13 @@ public sealed class HexStageController
         return true;
     }
 
+    public bool TryMoveAtScreenPosition(Vector2 screenPosition, out HexMoveResult result)
+    {
+        Vector3 worldPosition = mainCamera.ScreenToWorldPoint(
+            new Vector3(screenPosition.x, screenPosition.y, -mainCamera.transform.position.z));
+        return TryMove(boardView.Tilemap.WorldToCell(worldPosition), out result);
+    }
+
     private void RefreshBoard()
     {
         Board.RefreshUnavailableCells();
@@ -71,8 +76,8 @@ public sealed class HexStageController
             return;
         }
 
-        Vector2 panOffset = new(tilemap.cellSize.x * 1.5f, tilemap.cellSize.y * 1.5f);
-        cameraPanZoom.ResetForStage(boardView.CalculateBounds(Board), player.position, panOffset);
+        Vector2 panOffset = new(boardView.Tilemap.cellSize.x * 1.5f, boardView.Tilemap.cellSize.y * 1.5f);
+        cameraPanZoom.ResetForStage(boardView.CalculateBounds(Board), playerController.transform.position, panOffset);
     }
 }
 

@@ -1,53 +1,38 @@
-using System;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
 /// <summary>Converts pointer taps into movement attempts for the active stage.</summary>
-public sealed class HexPlayerController : IDisposable
+public sealed class HexPlayerController : MonoBehaviour
 {
-    private readonly Camera mainCamera;
-    private readonly Tilemap tilemap;
-    private readonly HexStageController stageController;
-    private PointerGestureInput gestureInput;
+    [SerializeField] private HexStageController stageController;
 
     public bool IsInputEnabled { get; set; }
-    public event Action<HexMoveResult> Moved;
+    public bool IsConfigured => stageController != null;
 
-    public HexPlayerController(Camera mainCamera, Tilemap tilemap, HexStageController stageController)
+    private void OnEnable()
     {
-        this.mainCamera = mainCamera;
-        this.tilemap = tilemap;
-        this.stageController = stageController;
+        EventBus<PointerTappedEvent>.Subscribe(TryMoveAtScreenPosition);
     }
 
-    public void Bind(PointerGestureInput input)
+    private void OnDisable()
     {
-        Dispose();
-        gestureInput = input;
-        gestureInput.Tapped += TryMoveAtScreenPosition;
+        EventBus<PointerTappedEvent>.Unsubscribe(TryMoveAtScreenPosition);
     }
 
-    public void Dispose()
+    public void SetWorldPosition(Vector3 worldPosition)
     {
-        if (gestureInput != null)
-        {
-            gestureInput.Tapped -= TryMoveAtScreenPosition;
-            gestureInput = null;
-        }
+        transform.position = worldPosition;
     }
 
-    private void TryMoveAtScreenPosition(Vector2 screenPosition)
+    private void TryMoveAtScreenPosition(PointerTappedEvent payload)
     {
         if (!IsInputEnabled)
         {
             return;
         }
 
-        Vector3 worldPosition = mainCamera.ScreenToWorldPoint(new Vector3(screenPosition.x, screenPosition.y, -mainCamera.transform.position.z));
-        Vector3Int target = tilemap.WorldToCell(worldPosition);
-        if (stageController.TryMove(target, out HexMoveResult move))
+        if (stageController.TryMoveAtScreenPosition(payload.ScreenPosition, out HexMoveResult move))
         {
-            Moved?.Invoke(move);
+            EventBus<PlayerMovedEvent>.Publish(new PlayerMovedEvent(move));
         }
     }
 }

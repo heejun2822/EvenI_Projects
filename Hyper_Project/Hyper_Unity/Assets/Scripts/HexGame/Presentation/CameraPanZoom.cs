@@ -2,26 +2,20 @@ using UnityEngine;
 
 public class CameraPanZoom : MonoBehaviour
 {
-    [SerializeField] private Camera targetCamera;
     [SerializeField] private float panSpeed = .001f;
     [SerializeField] private float zoomSpeed = .2f;
     [SerializeField] private float minimumZoom = 3f;
     [SerializeField] private float maximumZoom = 7f;
     [SerializeField] private float stagePadding = .25f;
 
-    private PointerGestureInput gestureInput;
+    private Camera targetCamera;
     private Bounds stageBounds;
     private Vector2 panBoundsOffset;
     private bool hasStageBounds;
 
-    public void BindGestureInput(PointerGestureInput input)
+    private void Awake()
     {
-        UnbindGestureInput();
-        gestureInput = input;
-        if (isActiveAndEnabled)
-        {
-            SubscribeGestureInput();
-        }
+        targetCamera = GetComponent<Camera>();
     }
 
     public void ResetForStage(Bounds bounds, Vector3 startPosition, Vector2 panOffset)
@@ -44,61 +38,27 @@ public class CameraPanZoom : MonoBehaviour
         targetCamera.transform.position = ClampPosition(position);
     }
 
-    private void Reset()
-    {
-        targetCamera = GetComponent<Camera>();
-    }
-
     private void OnEnable()
     {
-        SubscribeGestureInput();
+        EventBus<PointerDraggedEvent>.Subscribe(Pan);
+        EventBus<PointerZoomedEvent>.Subscribe(Zoom);
     }
 
     private void OnDisable()
     {
-        UnsubscribeGestureInput();
+        EventBus<PointerDraggedEvent>.Unsubscribe(Pan);
+        EventBus<PointerZoomedEvent>.Unsubscribe(Zoom);
     }
 
-    private void OnDestroy()
+    private void Pan(PointerDraggedEvent payload)
     {
-        UnbindGestureInput();
-    }
-
-    private void SubscribeGestureInput()
-    {
-        if (gestureInput == null)
-        {
-            return;
-        }
-        gestureInput.Dragged += Pan;
-        gestureInput.Zoomed += Zoom;
-    }
-
-    private void UnsubscribeGestureInput()
-    {
-        if (gestureInput == null)
-        {
-            return;
-        }
-        gestureInput.Dragged -= Pan;
-        gestureInput.Zoomed -= Zoom;
-    }
-
-    public void UnbindGestureInput()
-    {
-        UnsubscribeGestureInput();
-        gestureInput = null;
-    }
-
-    private void Pan(Vector2 delta)
-    {
-        Vector3 position = targetCamera.transform.position - (Vector3)(delta * panSpeed * targetCamera.orthographicSize);
+        Vector3 position = targetCamera.transform.position - (Vector3)(payload.Delta * panSpeed * targetCamera.orthographicSize);
         targetCamera.transform.position = ClampPosition(position);
     }
 
-    private void Zoom(Vector2 delta)
+    private void Zoom(PointerZoomedEvent payload)
     {
-        targetCamera.orthographicSize = Mathf.Clamp(targetCamera.orthographicSize - delta.y * zoomSpeed, minimumZoom, maximumZoom);
+        targetCamera.orthographicSize = Mathf.Clamp(targetCamera.orthographicSize - payload.Delta.y * zoomSpeed, minimumZoom, maximumZoom);
         targetCamera.transform.position = ClampPosition(targetCamera.transform.position);
     }
 

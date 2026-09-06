@@ -52,11 +52,13 @@ public sealed class GameState
     public void TakeGoalDamage(int targetScore)
     {
         Health -= Math.Abs(Score - targetScore);
+        Health = Math.Max(Health, 0);
     }
 
     public void TakeDamage(float amount)
     {
         Health -= amount;
+        Health = Math.Max(Health, 0);
     }
 
     public void RestoreHealth(float amount, float maximumHealth)
