@@ -9,5 +9,5 @@ public sealed class HexGoalText : MonoBehaviour
     private void Awake() => goalText = GetComponent<TextMeshProUGUI>();
     private void OnEnable() => EventBus<GoalChangedEvent>.Subscribe(Refresh);
     private void OnDisable() => EventBus<GoalChangedEvent>.Unsubscribe(Refresh);
-    private void Refresh(GoalChangedEvent payload) => goalText.text = $"Goal: {payload.Goal}";
+    private void Refresh(GoalChangedEvent payload) => goalText.text = payload.Goal.ToString();
 }

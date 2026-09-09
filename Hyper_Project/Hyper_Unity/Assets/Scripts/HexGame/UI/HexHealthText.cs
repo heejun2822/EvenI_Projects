@@ -25,6 +25,6 @@ public sealed class HexHealthText : MonoBehaviour
         EventBus<TimerChangedEvent>.Unsubscribe(RefreshTimerState);
     }
 
-    private void RefreshHealth(HealthChangedEvent payload) => healthText.text = $"Health: {Mathf.CeilToInt(payload.Health)}";
+    private void RefreshHealth(HealthChangedEvent payload) => healthText.text = Mathf.CeilToInt(payload.Health).ToString();
     private void RefreshTimerState(TimerChangedEvent payload) => healthText.color = payload.Remaining <= 0f ? new Color(1f, .2f, .2f) : baseColor;
 }

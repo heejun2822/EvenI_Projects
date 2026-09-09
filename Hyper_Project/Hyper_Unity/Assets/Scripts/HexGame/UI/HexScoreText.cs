@@ -9,5 +9,5 @@ public sealed class HexScoreText : MonoBehaviour
     private void Awake() => scoreText = GetComponent<TextMeshProUGUI>();
     private void OnEnable() => EventBus<ScoreChangedEvent>.Subscribe(Refresh);
     private void OnDisable() => EventBus<ScoreChangedEvent>.Unsubscribe(Refresh);
-    private void Refresh(ScoreChangedEvent payload) => scoreText.text = $"Score: {payload.Score}";
+    private void Refresh(ScoreChangedEvent payload) => scoreText.text = payload.Score.ToString();
 }

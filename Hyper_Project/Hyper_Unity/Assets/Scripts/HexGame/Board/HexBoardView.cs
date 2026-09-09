@@ -7,40 +7,44 @@ using UnityEngine.Tilemaps;
 public sealed class HexBoardView : MonoBehaviour
 {
     [SerializeField] private Tilemap tilemap;
-    [SerializeField] private TileBase normalTile;
+    [SerializeField] private TileBase defaultTile;
+    [SerializeField] private TileBase unavailableTile;
+    [SerializeField] private TileBase itemTile;
+    [SerializeField] private TileBase goalTile;
     [SerializeField] private TextMeshPro formulaLabelPrefab;
     [SerializeField] private SpriteRenderer glowPrefab;
     [SerializeField] private Transform labelRoot;
     [SerializeField] private Transform glowRoot;
-    [SerializeField] private Color defaultTileColor = new(.87f, .72f, .21f);
-    [SerializeField] private Color goalTileColor = new(1f, .45f, .45f);
-    [SerializeField] private Color healthTileColor = new(.3f, .85f, .5f);
-    [SerializeField] private Color unavailableTileColor = new(.32f, .32f, .32f);
     private readonly Dictionary<Vector3Int, TextMeshPro> labels = new();
     private readonly List<SpriteRenderer> glows = new();
 
     public Tilemap Tilemap => tilemap;
-    public bool IsConfigured => tilemap != null && normalTile != null && formulaLabelPrefab != null && glowPrefab != null &&
-        labelRoot != null && glowRoot != null;
+    public bool IsConfigured => tilemap != null && defaultTile != null && unavailableTile != null && itemTile != null &&
+        goalTile != null && formulaLabelPrefab != null && glowPrefab != null && labelRoot != null && glowRoot != null;
 
     public void Build(HexBoardState board)
     {
         Clear();
         foreach (Vector3Int cell in board.Cells)
         {
-            SetTile(cell, board.IsGoal(cell) ? goalTileColor : defaultTileColor);
             if (board.IsGoal(cell))
             {
-                CreateLabel(cell, $"GOAL\n{board.Stage.GoalScore}");
+                SetTile(cell, goalTile);
+                CreateLabel(cell, $"{board.Stage.GoalScore}");
             }
             else if (board.TryGetFormula(cell, out FormulaTileData formula))
             {
+                SetTile(cell, itemTile);
                 CreateLabel(cell, formula.ToString());
             }
             else if (board.TryGetHealth(cell, out int healthAmount))
             {
-                SetTile(cell, healthTileColor);
-                CreateLabel(cell, $"HEAL\n+{healthAmount}");
+                SetTile(cell, itemTile);
+                CreateLabel(cell, $"{healthAmount}");
+            }
+            else
+            {
+                SetTile(cell, defaultTile);
             }
         }
     }
@@ -52,11 +56,11 @@ public sealed class HexBoardView : MonoBehaviour
         {
             if (board.IsUnavailable(cell))
             {
-                SetTile(cell, unavailableTileColor);
+                SetTile(cell, unavailableTile);
             }
             else if (!board.IsVisited(cell))
             {
-                SetTile(cell, board.IsGoal(cell) ? goalTileColor : board.IsHealthCell(cell) ? healthTileColor : defaultTileColor);
+                SetTile(cell, GetAvailableTile(board, cell));
             }
         }
 
@@ -107,12 +111,17 @@ public sealed class HexBoardView : MonoBehaviour
         ClearGlows();
     }
 
-    private void SetTile(Vector3Int cell, Color color)
+    private TileBase GetAvailableTile(HexBoardState board, Vector3Int cell)
     {
-        tilemap.SetTile(cell, normalTile);
-        tilemap.SetTileFlags(cell, TileFlags.None);
-        tilemap.SetColor(cell, color);
+        if (board.IsGoal(cell))
+        {
+            return goalTile;
+        }
+
+        return board.IsHealthCell(cell) || board.TryGetFormula(cell, out _) ? itemTile : defaultTile;
     }
+
+    private void SetTile(Vector3Int cell, TileBase tile) => tilemap.SetTile(cell, tile);
 
     private void CreateLabel(Vector3Int cell, string value)
     {
