@@ -73,6 +73,16 @@ namespace GenshinImpactMovementSystem
                 return;
             }
         }
+
+        public void OnTriggerExit(Collider collider)
+        {
+            if (stateMachine.Player.LayerData.IsGroundLayer(collider.gameObject.layer))
+            {
+                OnContactWithGroundExited(collider);
+
+                return;
+            }
+        }
         #endregion
 
         #region Main Methods
@@ -143,6 +153,16 @@ namespace GenshinImpactMovementSystem
         #endregion
 
         #region Reusable Methods
+        protected virtual void AddInputActionsCallbacks()
+        {
+            stateMachine.Player.Input.PlayerActions.WalkToggle.started += OnWalkToggleStarted;
+        }
+
+        protected virtual void RemoveInputActionsCallbacks()
+        {
+            stateMachine.Player.Input.PlayerActions.WalkToggle.started -= OnWalkToggleStarted;
+        }
+
         protected void SetBaseRotationData()
         {
             stateMachine.ReusableData.RotationData = movementData.BaseRotationData;
@@ -219,14 +239,11 @@ namespace GenshinImpactMovementSystem
             stateMachine.Player.Rigidbody.linearVelocity = Vector3.zero;
         }
 
-        protected virtual void AddInputActionsCallbacks()
+        protected void ResetVerticalVelocity()
         {
-            stateMachine.Player.Input.PlayerActions.WalkToggle.started += OnWalkToggleStarted;
-        }
+            Vector3 playerHorizontalVelocity = GetPlayerHorizontalVelocity();
 
-        protected virtual void RemoveInputActionsCallbacks()
-        {
-            stateMachine.Player.Input.PlayerActions.WalkToggle.started -= OnWalkToggleStarted;
+            stateMachine.Player.Rigidbody.linearVelocity = playerHorizontalVelocity;
         }
 
         protected void DecelerateHorizontally()
@@ -263,6 +280,10 @@ namespace GenshinImpactMovementSystem
         }
 
         protected virtual void OnContactWithGround(Collider collider)
+        {
+        }
+
+        protected virtual void OnContactWithGroundExited(Collider collider)
         {
         }
         #endregion
