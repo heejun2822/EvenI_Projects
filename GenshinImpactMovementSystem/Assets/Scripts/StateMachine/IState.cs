@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace GenshinImpactMovementSystem
 {
     public interface IState
@@ -10,5 +12,6 @@ namespace GenshinImpactMovementSystem
         public void OnAnimationEnterEvent();
         public void OnAnimationExitEvent();
         public void OnAnimationTransitionEvent();
+        public void OnTriggerEnter(Collider collider);
     }
 }

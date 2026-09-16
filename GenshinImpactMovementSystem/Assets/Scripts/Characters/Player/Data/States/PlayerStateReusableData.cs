@@ -10,6 +10,7 @@ namespace GenshinImpactMovementSystem
         public float MovementDecelerationForce { get; set; } = 1f;
 
         public bool ShouldWalk { get; set; }
+        public bool ShouldSprint { get; set; }
 
         private Vector3 currentTargetRotation;
         private Vector3 timeToReachTargetRotation;
@@ -47,6 +48,8 @@ namespace GenshinImpactMovementSystem
                 return ref dampedTargetRotationPassedTime;
             }
         }
+
+        public Vector3 CurrentJumpForce { get; set; }
 
         public PlayerRotationData RotationData { get; set; }
     }
