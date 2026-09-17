@@ -21,9 +21,9 @@ namespace GenshinImpactMovementSystem
         #region IState Methods
         public override void Enter()
         {
-            base.Enter();
-
             stateMachine.ReusableData.MovementSpeedModifier = movementData.DashData.SpeedModifier;
+
+            base.Enter();
 
             stateMachine.ReusableData.CurrentJumpForce = airborneData.JumpData.StrongForce;
 
@@ -127,10 +127,6 @@ namespace GenshinImpactMovementSystem
         #endregion
 
         #region Input Methods
-        protected override void OnMovementCanceled(InputAction.CallbackContext context)
-        {
-        }
-
         private void OnMovementPerformed(InputAction.CallbackContext context)
         {
             shouldKeepRotating = true;

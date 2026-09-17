@@ -809,8 +809,8 @@ MonoBehaviour:
     Wrap: 1
     Recentering:
       Enabled: 0
-      Wait: 1
-      Time: 2
+      Wait: 0
+      Time: 4
     Restrictions: 0
   TiltAxis:
     Value: 0
@@ -2634,6 +2634,10 @@ MonoBehaviour:
     <GroundLayer>k__BackingField:
       serializedVersion: 2
       m_Bits: 64
+  <CameraUtility>k__BackingField:
+    <Camera>k__BackingField: {fileID: 249482976}
+    <DefaultHorizontalWaitTime>k__BackingField: 0
+    <DefaultHorizontalRecenteringTime>k__BackingField: 4
 --- !u!114 &511223100
 MonoBehaviour:
   m_ObjectHideFlags: 0
