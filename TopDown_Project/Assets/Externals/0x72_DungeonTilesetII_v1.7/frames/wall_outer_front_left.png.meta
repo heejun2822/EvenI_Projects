@@ -103,12 +103,12 @@ TextureImporter:
       name: wall_outer_front_left_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 0
         y: 0
-        width: 6
+        width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0d18ec86514aa5542a67e9c191ed2fd8
     internalID: 0
     vertices: []
     indices: 
