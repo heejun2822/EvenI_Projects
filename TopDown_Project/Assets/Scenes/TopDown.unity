@@ -2633,6 +2633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   characterRenderer: {fileID: 447838115}
   weaponPivot: {fileID: 1524701756}
+  WeaponPrefab: {fileID: 439920280631529833, guid: cef67933e57b6274b9482eca79660338, type: 3}
 --- !u!114 &1402447692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2671,6 +2672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0cb546176375574c871af2df993a476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResourceController
+  healthChangeDelay: 0.5
 --- !u!1 &1524701755
 GameObject:
   m_ObjectHideFlags: 0
