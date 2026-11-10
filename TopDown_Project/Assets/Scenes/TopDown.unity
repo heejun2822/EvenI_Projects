@@ -1916,6 +1916,67 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &498615900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 498615902}
+  - component: {fileID: 498615901}
+  m_Layer: 0
+  m_Name: EnemyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &498615901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498615900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f4547bc095cc894bbe9bf5fd9912fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyManager
+  enemyPrefabs:
+  - {fileID: 8889712202814768938, guid: 45f40f425f6860d49b955b35161f0582, type: 3}
+  - {fileID: 3549881654979209166, guid: 6ffcc1c58826642429dba655b3c2b2e9, type: 3}
+  spawnAreas:
+  - serializedVersion: 2
+    x: -7.5
+    y: -4.5
+    width: 4
+    height: 8
+  - serializedVersion: 2
+    x: 3.5
+    y: -4.5
+    width: 4
+    height: 8
+  gizmoColor: {r: 1, g: 0, b: 0, a: 0.3}
+  timeBetweenSpawns: 0.2
+  timeBetweenWaves: 1
+--- !u!4 &498615902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498615900}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -12460,7 +12521,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.094}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -12470,7 +12531,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.626, y: 0.877}
   m_EdgeRadius: 0
 --- !u!114 &1402447691
 MonoBehaviour:
@@ -14170,3 +14231,4 @@ SceneRoots:
   - {fileID: 1402447689}
   - {fileID: 1961994612}
   - {fileID: 13130515}
+  - {fileID: 498615902}
