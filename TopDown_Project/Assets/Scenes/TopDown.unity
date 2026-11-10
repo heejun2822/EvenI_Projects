@@ -2520,6 +2520,8 @@ GameObject:
   - component: {fileID: 1402447690}
   - component: {fileID: 1402447691}
   - component: {fileID: 1402447692}
+  - component: {fileID: 1402447693}
+  - component: {fileID: 1402447694}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2643,6 +2645,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a61f469b690fec46bcc12d9dafc0776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimationHandler
+--- !u!114 &1402447693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402447687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97925efe7cfbc6441aaff6cb3c1269bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatHandler
+  health: 10
+  speed: 3
+--- !u!114 &1402447694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402447687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0cb546176375574c871af2df993a476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResourceController
 --- !u!1 &1524701755
 GameObject:
   m_ObjectHideFlags: 0
