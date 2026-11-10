@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class PlayerController : BaseController
 {
+    private GameManager gameManager;
     private Camera cam;
 
-    protected override void Start()
+    public void Init(GameManager gameManager)
     {
-        base.Start();
+        this.gameManager = gameManager;
         cam = Camera.main;
     }
 
