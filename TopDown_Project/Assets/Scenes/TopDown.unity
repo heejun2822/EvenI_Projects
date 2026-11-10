@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 447838114}
   - component: {fileID: 447838115}
+  - component: {fileID: 447838116}
   m_Layer: 0
   m_Name: MainSprite
   m_TagString: Untagged
@@ -210,6 +211,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &447838116
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447838113}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c9bab7e26349ba40ad2a3f74e1c4a5d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &461055963
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,6 +2519,7 @@ GameObject:
   - component: {fileID: 1402447688}
   - component: {fileID: 1402447690}
   - component: {fileID: 1402447691}
+  - component: {fileID: 1402447692}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2607,6 +2631,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   characterRenderer: {fileID: 447838115}
   weaponPivot: {fileID: 1524701756}
+--- !u!114 &1402447692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402447687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a61f469b690fec46bcc12d9dafc0776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationHandler
 --- !u!1 &1524701755
 GameObject:
   m_ObjectHideFlags: 0
