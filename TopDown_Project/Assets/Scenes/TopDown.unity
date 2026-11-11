@@ -6043,6 +6043,16 @@ MonoBehaviour:
     y: -4.5
     width: 4
     height: 8
+  - serializedVersion: 2
+    x: 18
+    y: -4.5
+    width: 2
+    height: 8
+  - serializedVersion: 2
+    x: -5
+    y: -18
+    width: 10
+    height: 2
   gizmoColor: {r: 1, g: 0, b: 0, a: 0.3}
   timeBetweenSpawns: 0.2
   timeBetweenWaves: 1
@@ -11562,6 +11572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea8d65cb9d000e04caf5f1f09ef6c719, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  currentStageIndex: 0
   currentWaveIndex: 0
 --- !u!4 &832175920
 Transform:
