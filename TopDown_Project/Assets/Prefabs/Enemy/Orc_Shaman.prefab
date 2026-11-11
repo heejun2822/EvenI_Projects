@@ -126,7 +126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   characterRenderer: {fileID: 6414539950133174404}
   weaponPivot: {fileID: 2629570885265352884}
-  WeaponPrefab: {fileID: 0}
+  WeaponPrefab: {fileID: 439920280631529833, guid: e8bea82f27458f041855f9191ca09920, type: 3}
+  followRange: 15
 --- !u!114 &8677065783091475949
 MonoBehaviour:
   m_ObjectHideFlags: 0
