@@ -18,6 +18,8 @@ public class WeaponHandler : MonoBehaviour
     [SerializeField] private float attackRange = 10f;
     public float AttackRange { get => attackRange; set => attackRange = value; }
 
+    public AudioClip attackSoundClip;
+
     public LayerMask target;
 
     [Header("Knock Back Info")]
@@ -55,6 +57,9 @@ public class WeaponHandler : MonoBehaviour
     public virtual void Attack()
     {
         AttackAnimation();
+
+        if (attackSoundClip != null)
+            SoundManager.PlayClip(attackSoundClip);
     }
 
     public void AttackAnimation()

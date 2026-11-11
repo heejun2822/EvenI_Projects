@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResourceController
   healthChangeDelay: 0.5
+  damageClip: {fileID: 8300000, guid: 624a1ea6eb5091b41b1a8a0dd113281a, type: 3}
 --- !u!1 &6142279628770732404
 GameObject:
   m_ObjectHideFlags: 0
