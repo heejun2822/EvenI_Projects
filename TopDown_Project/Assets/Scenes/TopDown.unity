@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 13130515}
   - component: {fileID: 13130516}
+  - component: {fileID: 13130517}
   m_Layer: 0
   m_Name: ProjectileManager
   m_TagString: Untagged
@@ -168,6 +169,21 @@ MonoBehaviour:
   - {fileID: 484106433637898720, guid: 3cc7a267881df304b86a6e3c5b581b96, type: 3}
   - {fileID: 6302489527974520338, guid: 16063d2f875a3e446b284c5ff60a8e78, type: 3}
   impactParticleSystem: {fileID: 1289638673}
+--- !u!114 &13130517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13130514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be4306a510511d7458ad0456741372cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectPoolManager
+  prefabs:
+  - {fileID: 484106433637898720, guid: 3cc7a267881df304b86a6e3c5b581b96, type: 3}
+  - {fileID: 6302489527974520338, guid: 16063d2f875a3e446b284c5ff60a8e78, type: 3}
 --- !u!1 &33916503
 GameObject:
   m_ObjectHideFlags: 0
