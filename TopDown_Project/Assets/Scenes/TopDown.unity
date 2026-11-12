@@ -18075,8 +18075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97925efe7cfbc6441aaff6cb3c1269bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StatHandler
-  health: 10
-  speed: 3
+  statData: {fileID: 11400000, guid: 69003149a9ea1a140a1092664e2129ff, type: 2}
 --- !u!114 &1402447694
 MonoBehaviour:
   m_ObjectHideFlags: 0

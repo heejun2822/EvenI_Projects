@@ -12,7 +12,7 @@ public class ResourceController : MonoBehaviour
     private float timeSinceLastChange = float.MaxValue;
 
     public float CurrentHealth { get; private set; }
-    public float MaxHealth => statHandler.Health;
+    public float MaxHealth => statHandler.GetStat(StatType.Health);
 
     public AudioClip damageClip;
 
@@ -27,7 +27,7 @@ public class ResourceController : MonoBehaviour
 
     private void Start()
     {
-        CurrentHealth = statHandler.Health;
+        CurrentHealth = statHandler.GetStat(StatType.Health);
     }
 
     private void Update()
