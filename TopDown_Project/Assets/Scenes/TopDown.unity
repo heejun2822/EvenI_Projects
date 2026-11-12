@@ -6048,6 +6048,9 @@ MonoBehaviour:
   - {fileID: 8889712202814768938, guid: 45f40f425f6860d49b955b35161f0582, type: 3}
   - {fileID: 3549881654979209166, guid: 6ffcc1c58826642429dba655b3c2b2e9, type: 3}
   - {fileID: 8889712202814768938, guid: dc21328fa79d3e94fb386aa5e37c6917, type: 3}
+  itemPrefabs:
+  - {fileID: 8364486997122029263, guid: a74630f6c49d50549b70f4295f0a1314, type: 3}
+  - {fileID: 2331067213315823405, guid: 400a8a444ab78b147a1fd8f62bfc33f4, type: 3}
   spawnAreas:
   - serializedVersion: 2
     x: -7.5

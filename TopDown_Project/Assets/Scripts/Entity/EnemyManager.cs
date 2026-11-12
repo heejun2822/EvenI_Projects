@@ -11,10 +11,10 @@ public class EnemyManager : MonoBehaviour
 
     private Dictionary<string, GameObject> enemyPrefabDic;
 
+    [SerializeField] private List<GameObject> itemPrefabs;
+
     [SerializeField] private List<Rect> spawnAreas;
-
     [SerializeField] private Color gizmoColor = new Color(1, 0, 0, 0.3f);
-
     private List<EnemyController> activeEnemies = new List<EnemyController>();
 
     private bool enemySpawnComplete;
@@ -114,8 +114,16 @@ public class EnemyManager : MonoBehaviour
     public void RemoveEnemyOnDeath(EnemyController enemy)
     {
         activeEnemies.Remove(enemy);
+
+        CreateRandomItem(enemy.transform.position);
+
         if (enemySpawnComplete && activeEnemies.Count == 0)
             gameManager.EndOfWave();
+    }
+
+    public void CreateRandomItem(Vector3 position)
+    {
+        GameObject item = Instantiate(itemPrefabs[Random.Range(0, itemPrefabs.Count)], position, Quaternion.identity);
     }
 
     public void StartStage(StageInstance stageInstance)
