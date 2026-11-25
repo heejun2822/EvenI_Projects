@@ -1,0 +1,16 @@
+{
+  "Items": [
+    {
+      "key": 1,
+      "name": "경찰",
+      "minLevel": 1,
+      "maxLevel": 30
+    },
+    {
+      "key": 2,
+      "name": "경찰2",
+      "minLevel": 31,
+      "maxLevel": 60
+    }
+  ]
+}

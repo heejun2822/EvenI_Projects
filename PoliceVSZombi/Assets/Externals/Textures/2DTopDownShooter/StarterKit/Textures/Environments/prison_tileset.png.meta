@@ -1,0 +1,2848 @@
+fileFormatVersion: 2
+guid: 798cbf70f2c1b45f993510e996c4ce22
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3395116880516476347
+    second: prison_tileset_0
+  - first:
+      213: 807325651345567225
+    second: prison_tileset_1
+  - first:
+      213: 706121820269029791
+    second: prison_tileset_2
+  - first:
+      213: -3706930925749426159
+    second: prison_tileset_3
+  - first:
+      213: -8878861787415001094
+    second: prison_tileset_4
+  - first:
+      213: 4577220482256431883
+    second: prison_tileset_5
+  - first:
+      213: 3530585790442474628
+    second: prison_tileset_6
+  - first:
+      213: -4342561131712255006
+    second: prison_tileset_7
+  - first:
+      213: -7209858450253074045
+    second: prison_tileset_8
+  - first:
+      213: -3207322090844644943
+    second: prison_tileset_9
+  - first:
+      213: 51284527312711051
+    second: prison_tileset_10
+  - first:
+      213: 4794224434756103702
+    second: prison_tileset_11
+  - first:
+      213: 41609090164914394
+    second: prison_tileset_12
+  - first:
+      213: 5162064154190062509
+    second: prison_tileset_13
+  - first:
+      213: 218627499468079566
+    second: prison_tileset_14
+  - first:
+      213: -6644293768385937386
+    second: prison_tileset_15
+  - first:
+      213: 4361863763447738313
+    second: prison_tileset_16
+  - first:
+      213: 7568706777055755912
+    second: prison_tileset_17
+  - first:
+      213: -5237833404518920588
+    second: prison_tileset_18
+  - first:
+      213: -1454054446157209337
+    second: prison_tileset_19
+  - first:
+      213: 7511021809507085186
+    second: prison_tileset_20
+  - first:
+      213: -705805487368210857
+    second: prison_tileset_21
+  - first:
+      213: -1908930554155168922
+    second: prison_tileset_22
+  - first:
+      213: 364387467312744507
+    second: prison_tileset_23
+  - first:
+      213: 5448897172014652272
+    second: prison_tileset_24
+  - first:
+      213: 8100771285764066435
+    second: prison_tileset_25
+  - first:
+      213: -2796479515646294529
+    second: prison_tileset_26
+  - first:
+      213: -6012954702592898951
+    second: prison_tileset_27
+  - first:
+      213: -5198363852887830539
+    second: prison_tileset_28
+  - first:
+      213: 4625267830451452630
+    second: prison_tileset_29
+  - first:
+      213: -2563811820989555361
+    second: prison_tileset_30
+  - first:
+      213: 550710601115195503
+    second: prison_tileset_31
+  - first:
+      213: 4255787019994508016
+    second: prison_tileset_32
+  - first:
+      213: 6526206148230211685
+    second: prison_tileset_33
+  - first:
+      213: -3475843691597703310
+    second: prison_tileset_34
+  - first:
+      213: -3256477313246846192
+    second: prison_tileset_35
+  - first:
+      213: 2020675542229506549
+    second: prison_tileset_36
+  - first:
+      213: 7621073130026898504
+    second: prison_tileset_37
+  - first:
+      213: 6870534752498467513
+    second: prison_tileset_38
+  - first:
+      213: 5499898375567404633
+    second: prison_tileset_39
+  - first:
+      213: -1517857018822499573
+    second: prison_tileset_40
+  - first:
+      213: -5686377220931834264
+    second: prison_tileset_41
+  - first:
+      213: 5064428799537189178
+    second: prison_tileset_42
+  - first:
+      213: -416140318050095966
+    second: prison_tileset_43
+  - first:
+      213: 6556300764903188007
+    second: prison_tileset_44
+  - first:
+      213: 2910008132037579316
+    second: prison_tileset_45
+  - first:
+      213: -5112134074962472911
+    second: prison_tileset_46
+  - first:
+      213: 5108363743400313840
+    second: prison_tileset_47
+  - first:
+      213: 5377796676923381573
+    second: prison_tileset_48
+  - first:
+      213: -6031888794122564204
+    second: prison_tileset_49
+  - first:
+      213: -3549342126619486033
+    second: prison_tileset_50
+  - first:
+      213: 5288460023579678889
+    second: prison_tileset_51
+  - first:
+      213: -6377898353730258010
+    second: prison_tileset_52
+  - first:
+      213: 1082356391837829978
+    second: prison_tileset_53
+  - first:
+      213: -2469307632369016277
+    second: prison_tileset_54
+  - first:
+      213: 8670647582745361023
+    second: prison_tileset_55
+  - first:
+      213: -4746024016117074461
+    second: prison_tileset_56
+  - first:
+      213: -3163911722398495737
+    second: prison_tileset_57
+  - first:
+      213: 3503988808109379228
+    second: prison_tileset_58
+  - first:
+      213: -3594755543401305704
+    second: prison_tileset_59
+  - first:
+      213: -8425942272433639722
+    second: prison_tileset_60
+  - first:
+      213: -4014992868143657060
+    second: prison_tileset_61
+  - first:
+      213: -1685267972767541285
+    second: prison_tileset_62
+  - first:
+      213: 8986293866613380887
+    second: prison_tileset_63
+  - first:
+      213: 1267119590222897557
+    second: prison_tileset_64
+  - first:
+      213: -7904696421116840575
+    second: prison_tileset_65
+  - first:
+      213: -7926951763930911629
+    second: prison_tileset_66
+  - first:
+      213: 7117406459342562781
+    second: prison_tileset_67
+  - first:
+      213: 5145196400046883735
+    second: prison_tileset_68
+  - first:
+      213: -6334708742783405873
+    second: prison_tileset_69
+  - first:
+      213: 13602589921305045
+    second: prison_tileset_70
+  - first:
+      213: 7163893274952763359
+    second: prison_tileset_71
+  - first:
+      213: -7858798403641759279
+    second: prison_tileset_72
+  - first:
+      213: 1340890219320024978
+    second: prison_tileset_73
+  - first:
+      213: 3126191749055059844
+    second: prison_tileset_74
+  - first:
+      213: -2427892727372642018
+    second: prison_tileset_75
+  - first:
+      213: -6693716264139421163
+    second: prison_tileset_76
+  - first:
+      213: 6130128256892281359
+    second: prison_tileset_77
+  - first:
+      213: 8580323099021035764
+    second: prison_tileset_78
+  - first:
+      213: 9080702252032686105
+    second: prison_tileset_79
+  - first:
+      213: -4646274743549058002
+    second: prison_tileset_80
+  - first:
+      213: 3947679509345296939
+    second: prison_tileset_81
+  - first:
+      213: 5377847061153912568
+    second: prison_tileset_82
+  - first:
+      213: -6532659186377815579
+    second: prison_tileset_83
+  - first:
+      213: 3611018869956848971
+    second: prison_tileset_84
+  - first:
+      213: -3187948410710569801
+    second: prison_tileset_85
+  - first:
+      213: 4441273653330075883
+    second: prison_tileset_86
+  - first:
+      213: 8969535959805716102
+    second: prison_tileset_87
+  - first:
+      213: -3820578893715623415
+    second: prison_tileset_0
+  - first:
+      213: -1015397906632693807
+    second: prison_tileset_1
+  - first:
+      213: 506468595831966302
+    second: prison_tileset_2
+  - first:
+      213: 5183337544216428937
+    second: prison_tileset_3
+  - first:
+      213: 4178117881807845118
+    second: prison_tileset_4
+  - first:
+      213: 1485624581865456317
+    second: prison_tileset_5
+  - first:
+      213: -5315493797374479999
+    second: prison_tileset_6
+  - first:
+      213: -652443633073075145
+    second: prison_tileset_7
+  - first:
+      213: -5152421742811649875
+    second: prison_tileset_8
+  - first:
+      213: -8266463520785478984
+    second: prison_tileset_9
+  - first:
+      213: 6415679463070611576
+    second: prison_tileset_10
+  - first:
+      213: 6895889669495757718
+    second: prison_tileset_11
+  - first:
+      213: -6382888852584535796
+    second: prison_tileset_12
+  - first:
+      213: -2624412182977487697
+    second: prison_tileset_13
+  - first:
+      213: -4605466440907651833
+    second: prison_tileset_14
+  - first:
+      213: -3400950669102540918
+    second: prison_tileset_15
+  - first:
+      213: 3947572257723334158
+    second: prison_tileset_16
+  - first:
+      213: 8431979255040328826
+    second: prison_tileset_17
+  - first:
+      213: -8753718032060365234
+    second: prison_tileset_18
+  - first:
+      213: -4545542527814403138
+    second: prison_tileset_19
+  - first:
+      213: 3266998229817715778
+    second: prison_tileset_20
+  - first:
+      213: 7691917443930286163
+    second: prison_tileset_21
+  - first:
+      213: -7661350952953985291
+    second: prison_tileset_22
+  - first:
+      213: -3869945546224337399
+    second: prison_tileset_23
+  - first:
+      213: 7533928011889662848
+    second: prison_tileset_24
+  - first:
+      213: -5045532178230249405
+    second: prison_tileset_25
+  - first:
+      213: 6236998782277714899
+    second: prison_tileset_26
+  - first:
+      213: 812145063116251858
+    second: prison_tileset_27
+  - first:
+      213: 4910468540010629742
+    second: prison_tileset_28
+  - first:
+      213: 2906396943372786018
+    second: prison_tileset_29
+  - first:
+      213: 2127408598943999383
+    second: prison_tileset_30
+  - first:
+      213: -1213974688446698714
+    second: prison_tileset_31
+  - first:
+      213: -1809096065651216808
+    second: prison_tileset_32
+  - first:
+      213: 6286198089433864552
+    second: prison_tileset_33
+  - first:
+      213: 1789715630721621322
+    second: prison_tileset_34
+  - first:
+      213: -2104772393378219091
+    second: prison_tileset_35
+  - first:
+      213: -4091956985168589729
+    second: prison_tileset_36
+  - first:
+      213: 5435938903741980115
+    second: prison_tileset_37
+  - first:
+      213: 6020274426535874320
+    second: prison_tileset_38
+  - first:
+      213: 7420980013521123356
+    second: prison_tileset_39
+  - first:
+      213: 1623427087943102822
+    second: prison_tileset_40
+  - first:
+      213: -1624673174705751891
+    second: prison_tileset_41
+  - first:
+      213: -3127006137572913964
+    second: prison_tileset_42
+  - first:
+      213: 8821201551842783773
+    second: prison_tileset_43
+  - first:
+      213: -7767725697645109497
+    second: prison_tileset_44
+  - first:
+      213: 1827875525128159658
+    second: prison_tileset_45
+  - first:
+      213: 2721020531781172182
+    second: prison_tileset_46
+  - first:
+      213: 3684551221597871976
+    second: prison_tileset_47
+  - first:
+      213: -6205886346130276686
+    second: prison_tileset_48
+  - first:
+      213: 7177545254766408173
+    second: prison_tileset_49
+  - first:
+      213: 5793131809044487851
+    second: prison_tileset_50
+  - first:
+      213: 4640527794384485575
+    second: prison_tileset_51
+  - first:
+      213: 4864597655120533999
+    second: prison_tileset_52
+  - first:
+      213: -2757714590971329280
+    second: prison_tileset_53
+  - first:
+      213: -7203221450872860929
+    second: prison_tileset_54
+  - first:
+      213: -8491718686868612909
+    second: prison_tileset_55
+  - first:
+      213: 3485869568838178342
+    second: prison_tileset_56
+  - first:
+      213: 8832895178447572495
+    second: prison_tileset_57
+  - first:
+      213: -6946911342505862644
+    second: prison_tileset_58
+  - first:
+      213: -5544857162750277010
+    second: prison_tileset_59
+  - first:
+      213: -2651523179792856645
+    second: prison_tileset_60
+  - first:
+      213: 4483819554814297529
+    second: prison_tileset_61
+  - first:
+      213: -1027266201367276742
+    second: prison_tileset_62
+  - first:
+      213: -8775458798035929191
+    second: prison_tileset_63
+  - first:
+      213: 3179220310570740310
+    second: prison_tileset_64
+  - first:
+      213: 4601233443336624116
+    second: prison_tileset_65
+  - first:
+      213: -898313913329417528
+    second: prison_tileset_66
+  - first:
+      213: -8513004971226506322
+    second: prison_tileset_67
+  - first:
+      213: 5115854798048595036
+    second: prison_tileset_68
+  - first:
+      213: -1617451007368575683
+    second: prison_tileset_69
+  - first:
+      213: 241150650213632180
+    second: prison_tileset_70
+  - first:
+      213: 3392564963018360429
+    second: prison_tileset_71
+  - first:
+      213: 2388167368199246452
+    second: prison_tileset_72
+  - first:
+      213: 5881698542031952629
+    second: prison_tileset_73
+  - first:
+      213: 683569830937625793
+    second: prison_tileset_74
+  - first:
+      213: 6243314396619569688
+    second: prison_tileset_75
+  - first:
+      213: -8205562206183522503
+    second: prison_tileset_76
+  - first:
+      213: 7769493687493485563
+    second: prison_tileset_77
+  - first:
+      213: -6095549060413722750
+    second: prison_tileset_78
+  - first:
+      213: 3273830517164509744
+    second: prison_tileset_79
+  - first:
+      213: -1646549345123065637
+    second: prison_tileset_80
+  - first:
+      213: -5892181871539354135
+    second: prison_tileset_81
+  - first:
+      213: 5188187103279926697
+    second: prison_tileset_82
+  - first:
+      213: 5606795808415039076
+    second: prison_tileset_83
+  - first:
+      213: -4515246250358323034
+    second: prison_tileset_84
+  - first:
+      213: 5941938546604894782
+    second: prison_tileset_85
+  - first:
+      213: 4229313536260631017
+    second: prison_tileset_86
+  - first:
+      213: -2766500920423990875
+    second: prison_tileset_87
+  - first:
+      213: -6214458776738326496
+    second: prison_tileset_88
+  - first:
+      213: 2203808319067985635
+    second: prison_tileset_89
+  - first:
+      213: -1248973501332440696
+    second: prison_tileset_90
+  - first:
+      213: -3756085701794594774
+    second: prison_tileset_91
+  - first:
+      213: 7931556436277218481
+    second: prison_tileset_92
+  - first:
+      213: 999854199685267097
+    second: prison_tileset_93
+  - first:
+      213: 8495159014957152522
+    second: prison_tileset_88
+  - first:
+      213: -6588421903200432622
+    second: prison_tileset_89
+  - first:
+      213: 1736963098367224226
+    second: prison_tileset_90
+  - first:
+      213: -4371059970757357426
+    second: prison_tileset_91
+  - first:
+      213: 4937928128200939697
+    second: prison_tileset_92
+  - first:
+      213: -4834110104163542511
+    second: prison_tileset_93
+  - first:
+      213: 9182801418833998015
+    second: prison_tileset_94
+  - first:
+      213: 89750555965493958
+    second: prison_tileset_95
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: prison_tileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902b9bb0db39afac0800000000000000
+      internalID: 3395116880516476347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7ab75dbf498e1f0800000000000000
+      internalID: 807325651345567225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a84782186570700800000000000000
+      internalID: 706121820269029791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98147f1b80aeee740800000000000000
+      internalID: -3706930925749426159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef63ddea318abf930800000000000000
+      internalID: -8878861787415001094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2cdaf9faffd9410800000000000000
+      internalID: 4577220482256431883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181b3b1dd829b36b0800000000000000
+      internalID: 3530585790442474628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73cc6b6f8fd02f6f0800000000000000
+      internalID: -4342561131712255006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da866be39bbee78b0800000000000000
+      internalID: -7209858450253074045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba4bd6b93f974d80800000000000000
+      internalID: -3207322090844644943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878b71dda72190950800000000000000
+      internalID: 51284527312711051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b94905e1f13bf50800000000000000
+      internalID: 4794224434756103702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09e5e4186c6b67a0800000000000000
+      internalID: 41609090164914394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac5b693607349bd0800000000000000
+      internalID: 5162064154190062509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70587bc3ca81610c0800000000000000
+      internalID: 218627499468079566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87148da2656dc0d0800000000000000
+      internalID: -6644293768385937386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e39c2ad0898c630800000000000000
+      internalID: 4361863763447738313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74442a3578640570800000000000000
+      internalID: 7568706777055755912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e464c1b34db848680800000000000000
+      internalID: -5237833404518920588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbf03e772dfae0c0800000000000000
+      internalID: -1454054446157209337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c6d1aa495b65d20800000000000000
+      internalID: 7511021809507085186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3586817692e2fba60800000000000000
+      internalID: -705805487368210857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6c39d56e96da590800000000000000
+      internalID: -1908930554155168922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e713197013b4ac0800000000000000
+      internalID: 364387467312744507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b5c004c93ed8860800000000000000
+      internalID: 5448897172014652272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34878cd573baaf9b0800000000000000
+      internalID: 8100771285764066435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d30532f8554e8650800000000000000
+      internalID: -2796479515646294529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2a129c1a1554b00800000000000000
+      internalID: -6012954702592898951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a8010de1d752440800000000000000
+      internalID: -5198363852887830539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269140a0f98955820800000000000000
+      internalID: 4625267830451452630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7952b2869d2168d10800000000000000
+      internalID: -2563811820989555361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ba1d8e378172fe0800000000000000
+      internalID: 550710601115195503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e6d4a96bcc4e6e0800000000000000
+      internalID: 4255787019994508016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869d17c4bdf0d3750800000000000000
+      internalID: 6526206148230211685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d502242e856d810800000000000000
+      internalID: -3475843691597703310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab74a7e8a85ac2e0800000000000000
+      internalID: -3256477313246846192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c09d65dc27637c0800000000000000
+      internalID: 2020675542229506549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd5442d1a5507b40800000000000000
+      internalID: 7621073130026898504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f0a04b1bf4c8350800000000000000
+      internalID: 6870534752498467513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c183337110e9cf660800000000000000
+      internalID: 5499898375567404633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661789fc552978610800000000000000
+      internalID: -1517857018822499573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8be810b500479e0800000000000000
+      internalID: -5686377220931834264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc00874c74aa94d0800000000000000
+      internalID: 5064428799537189178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12b6bd13143b6a70800000000000000
+      internalID: -416140318050095966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f903712ae733490800000000000000
+      internalID: 6556300764903188007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa105e80b1bed5910800000000000000
+      internalID: 2910008132037579316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db7c5fc1c103c520800000000000000
+      internalID: -5112134074962472911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f921080d7222330800000000000000
+      internalID: 5108363743400313840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be35769f3340e9a0800000000000000
+      internalID: 5377796676923381573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de174a58163cb9360800000000000000
+      internalID: -6031888794122564204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baedc1fdfa6556050800000000000000
+      internalID: -3549342126619486033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc3d924177766040800000000000000
+      internalID: 5288460023579678889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe958a82bc5828340800000000000000
+      internalID: -6377898353730258010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0050e35c031aab9d0800000000000000
+      internalID: 1082356391837829978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffecf363144090c90800000000000000
+      internalID: -2469307632369016277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d856a868da572a80800000000000000
+      internalID: 8670647582745361023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_56
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62691f767eb406030800000000000000
+      internalID: -4746024016117074461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_57
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ec0a9bd5fb49a70800000000000000
+      internalID: -3163911722398495737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_58
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a5ec7b0fc979f90800000000000000
+      internalID: 3503988808109379228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_59
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a4df3d9c5bc03b0800000000000000
+      internalID: -3594755543401305704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_60
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb98bb267b5e33bd0800000000000000
+      internalID: -8425942272433639722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_61
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b508a9f02ab93e30800000000000000
+      internalID: -4014992868143657060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a331db125da6eb1f0800000000000000
+      internalID: -1685267972767541285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_63
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997fdf1b7be473680800000000000000
+      internalID: 8986293866613380887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65aa64a370cde1c20800000000000000
+      internalID: 1267119590222897557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_65
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f71ab6307ddadf30800000000000000
+      internalID: -7904696421116840575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_66
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2853b514c8883f0800000000000000
+      internalID: -7926951763930911629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_67
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabd8ee151bbbd980800000000000000
+      internalID: 7117406459342562781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c0a2875da2ff640800000000000000
+      internalID: 5145196400046883735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_69
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35c230e0e8ad89e0800000000000000
+      internalID: -6334708742783405873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_70
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8865b1d3db85300800000000000000
+      internalID: 13602589921305045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_71
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66452afbdfc41f20800000000000000
+      internalID: 7163893274952763359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47212bd7199742120800000000000000
+      internalID: -7858798403641759279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_73
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa5fb159adff9150800000000000000
+      internalID: 1340890219320024978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c40638b3278c7900800000000000000
+      internalID: 3126191749055059844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_75
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a779f7d55b4a650800000000000000
+      internalID: -2427892727372642018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_76
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f7f0ef5acff1e80800000000000000
+      internalID: -6693716264139421163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_77
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf360bf1859c2db60800000000000000
+      internalID: 6130128256892281359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_78
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fe217dc62486ba0800000000000000
+      internalID: 8580323099021035764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_79
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a8c66828bfe6d20800000000000000
+      internalID: 9080702252032686105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0a9ca28184629e0800000000000000
+      internalID: -4646274743549058002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_81
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e586e25ec3ca3ea0800000000000000
+      internalID: 3947679509345296939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_82
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad4347aea4200840800000000000000
+      internalID: 5377847061153912568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_83
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e3ab8e4175fcd40800000000000000
+      internalID: -6532659186377815579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_84
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a84af5457f9651c0800000000000000
+      internalID: 3611018869956848971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ae59b50a1067250800000000000000
+      internalID: -3187948410710569801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_86
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9e09cd04a81ba30800000000000000
+      internalID: 4441273653330075883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_87
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a93657021a6b99d0800000000000000
+      internalID: 8969535959805716102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_88
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a097af46d1ed4e570800000000000000
+      internalID: -6214458776738326496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_89
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ec55d9f293194a0800000000000000
+      internalID: 2203808319067985635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_90
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9e3223cbeea1810800000000000000
+      internalID: -1248973501332440696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_91
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80141f8d10e653c0800000000000000
+      internalID: -3756085701794594774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_92
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b893d7687b078440800000000000000
+      internalID: 7931556436277218481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_93
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a9434f87ac9ecb0800000000000000
+      internalID: 999854199685267097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_94
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0bd84ec3ddf6f70800000000000000
+      internalID: 9182801418833998015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison_tileset_95
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c297b6b7abde3100800000000000000
+      internalID: 89750555965493958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      prison_tileset_0: 3395116880516476347
+      prison_tileset_1: 807325651345567225
+      prison_tileset_10: 51284527312711051
+      prison_tileset_11: 4794224434756103702
+      prison_tileset_12: 41609090164914394
+      prison_tileset_13: 5162064154190062509
+      prison_tileset_14: 218627499468079566
+      prison_tileset_15: -6644293768385937386
+      prison_tileset_16: 4361863763447738313
+      prison_tileset_17: 7568706777055755912
+      prison_tileset_18: -5237833404518920588
+      prison_tileset_19: -1454054446157209337
+      prison_tileset_2: 706121820269029791
+      prison_tileset_20: 7511021809507085186
+      prison_tileset_21: -705805487368210857
+      prison_tileset_22: -1908930554155168922
+      prison_tileset_23: 364387467312744507
+      prison_tileset_24: 5448897172014652272
+      prison_tileset_25: 8100771285764066435
+      prison_tileset_26: -2796479515646294529
+      prison_tileset_27: -6012954702592898951
+      prison_tileset_28: -5198363852887830539
+      prison_tileset_29: 4625267830451452630
+      prison_tileset_3: -3706930925749426159
+      prison_tileset_30: -2563811820989555361
+      prison_tileset_31: 550710601115195503
+      prison_tileset_32: 4255787019994508016
+      prison_tileset_33: 6526206148230211685
+      prison_tileset_34: -3475843691597703310
+      prison_tileset_35: -3256477313246846192
+      prison_tileset_36: 2020675542229506549
+      prison_tileset_37: 7621073130026898504
+      prison_tileset_38: 6870534752498467513
+      prison_tileset_39: 5499898375567404633
+      prison_tileset_4: -8878861787415001094
+      prison_tileset_40: -1517857018822499573
+      prison_tileset_41: -5686377220931834264
+      prison_tileset_42: 5064428799537189178
+      prison_tileset_43: -416140318050095966
+      prison_tileset_44: 6556300764903188007
+      prison_tileset_45: 2910008132037579316
+      prison_tileset_46: -5112134074962472911
+      prison_tileset_47: 5108363743400313840
+      prison_tileset_48: 5377796676923381573
+      prison_tileset_49: -6031888794122564204
+      prison_tileset_5: 4577220482256431883
+      prison_tileset_50: -3549342126619486033
+      prison_tileset_51: 5288460023579678889
+      prison_tileset_52: -6377898353730258010
+      prison_tileset_53: 1082356391837829978
+      prison_tileset_54: -2469307632369016277
+      prison_tileset_55: 8670647582745361023
+      prison_tileset_56: -4746024016117074461
+      prison_tileset_57: -3163911722398495737
+      prison_tileset_58: 3503988808109379228
+      prison_tileset_59: -3594755543401305704
+      prison_tileset_6: 3530585790442474628
+      prison_tileset_60: -8425942272433639722
+      prison_tileset_61: -4014992868143657060
+      prison_tileset_62: -1685267972767541285
+      prison_tileset_63: 8986293866613380887
+      prison_tileset_64: 1267119590222897557
+      prison_tileset_65: -7904696421116840575
+      prison_tileset_66: -7926951763930911629
+      prison_tileset_67: 7117406459342562781
+      prison_tileset_68: 5145196400046883735
+      prison_tileset_69: -6334708742783405873
+      prison_tileset_7: -4342561131712255006
+      prison_tileset_70: 13602589921305045
+      prison_tileset_71: 7163893274952763359
+      prison_tileset_72: -7858798403641759279
+      prison_tileset_73: 1340890219320024978
+      prison_tileset_74: 3126191749055059844
+      prison_tileset_75: -2427892727372642018
+      prison_tileset_76: -6693716264139421163
+      prison_tileset_77: 6130128256892281359
+      prison_tileset_78: 8580323099021035764
+      prison_tileset_79: 9080702252032686105
+      prison_tileset_8: -7209858450253074045
+      prison_tileset_80: -4646274743549058002
+      prison_tileset_81: 3947679509345296939
+      prison_tileset_82: 5377847061153912568
+      prison_tileset_83: -6532659186377815579
+      prison_tileset_84: 3611018869956848971
+      prison_tileset_85: -3187948410710569801
+      prison_tileset_86: 4441273653330075883
+      prison_tileset_87: 8969535959805716102
+      prison_tileset_88: -6214458776738326496
+      prison_tileset_89: 2203808319067985635
+      prison_tileset_9: -3207322090844644943
+      prison_tileset_90: -1248973501332440696
+      prison_tileset_91: -3756085701794594774
+      prison_tileset_92: 7931556436277218481
+      prison_tileset_93: 999854199685267097
+      prison_tileset_94: 9182801418833998015
+      prison_tileset_95: 89750555965493958
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

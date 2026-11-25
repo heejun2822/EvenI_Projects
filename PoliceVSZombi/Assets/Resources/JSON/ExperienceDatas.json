@@ -1,0 +1,184 @@
+{
+  "Items": [
+    {
+      "key": 1,
+      "experienceRequired": 100,
+      "totalExperience": 100,
+      "statID": 1
+    },
+    {
+      "key": 2,
+      "experienceRequired": 200,
+      "totalExperience": 300,
+      "statID": 2
+    },
+    {
+      "key": 3,
+      "experienceRequired": 300,
+      "totalExperience": 600,
+      "statID": 3
+    },
+    {
+      "key": 4,
+      "experienceRequired": 400,
+      "totalExperience": 1000,
+      "statID": 4
+    },
+    {
+      "key": 5,
+      "experienceRequired": 500,
+      "totalExperience": 1500,
+      "statID": 5
+    },
+    {
+      "key": 6,
+      "experienceRequired": 600,
+      "totalExperience": 2100,
+      "statID": 6
+    },
+    {
+      "key": 7,
+      "experienceRequired": 700,
+      "totalExperience": 2800,
+      "statID": 7
+    },
+    {
+      "key": 8,
+      "experienceRequired": 800,
+      "totalExperience": 3600,
+      "statID": 8
+    },
+    {
+      "key": 9,
+      "experienceRequired": 900,
+      "totalExperience": 4500,
+      "statID": 9
+    },
+    {
+      "key": 10,
+      "experienceRequired": 1000,
+      "totalExperience": 5500,
+      "statID": 10
+    },
+    {
+      "key": 11,
+      "experienceRequired": 1100,
+      "totalExperience": 6600,
+      "statID": 11
+    },
+    {
+      "key": 12,
+      "experienceRequired": 1200,
+      "totalExperience": 7800,
+      "statID": 12
+    },
+    {
+      "key": 13,
+      "experienceRequired": 1300,
+      "totalExperience": 9100,
+      "statID": 13
+    },
+    {
+      "key": 14,
+      "experienceRequired": 1400,
+      "totalExperience": 10500,
+      "statID": 14
+    },
+    {
+      "key": 15,
+      "experienceRequired": 1500,
+      "totalExperience": 12000,
+      "statID": 15
+    },
+    {
+      "key": 16,
+      "experienceRequired": 1600,
+      "totalExperience": 13600,
+      "statID": 16
+    },
+    {
+      "key": 17,
+      "experienceRequired": 1700,
+      "totalExperience": 15300,
+      "statID": 17
+    },
+    {
+      "key": 18,
+      "experienceRequired": 1800,
+      "totalExperience": 17100,
+      "statID": 18
+    },
+    {
+      "key": 19,
+      "experienceRequired": 1900,
+      "totalExperience": 19000,
+      "statID": 19
+    },
+    {
+      "key": 20,
+      "experienceRequired": 2000,
+      "totalExperience": 21000,
+      "statID": 20
+    },
+    {
+      "key": 21,
+      "experienceRequired": 2100,
+      "totalExperience": 23100,
+      "statID": 21
+    },
+    {
+      "key": 22,
+      "experienceRequired": 2200,
+      "totalExperience": 25300,
+      "statID": 22
+    },
+    {
+      "key": 23,
+      "experienceRequired": 2300,
+      "totalExperience": 27600,
+      "statID": 23
+    },
+    {
+      "key": 24,
+      "experienceRequired": 2400,
+      "totalExperience": 30000,
+      "statID": 24
+    },
+    {
+      "key": 25,
+      "experienceRequired": 2500,
+      "totalExperience": 32500,
+      "statID": 25
+    },
+    {
+      "key": 26,
+      "experienceRequired": 2600,
+      "totalExperience": 35100,
+      "statID": 26
+    },
+    {
+      "key": 27,
+      "experienceRequired": 2700,
+      "totalExperience": 37800,
+      "statID": 27
+    },
+    {
+      "key": 28,
+      "experienceRequired": 2800,
+      "totalExperience": 40600,
+      "statID": 28
+    },
+    {
+      "key": 29,
+      "experienceRequired": 2900,
+      "totalExperience": 43500,
+      "statID": 29
+    },
+    {
+      "key": 30,
+      "experienceRequired": 3000,
+      "totalExperience": 46500,
+      "statID": 30
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 416d1606d5ab27843b4649e3c2bcb613, type: 3}
+  m_Name: P_MachineGun
+  m_EditorClassIdentifier: 
+  weaponName: "\uAD8C\uCD1D"
+  baseDamage: 3
+  attackCooldown: 0.2
+  target:
+    serializedVersion: 2
+    m_Bits: 256
+  isOnKnockback: 0
+  knockbackPower: 5
+  knockbackDuration: 0.1
+  modifiers:
+  - statType: 2
+    modType: 0
+    value: 200
+  - statType: 1
+    modType: 0
+    value: 5
+  soundClip: {fileID: 8300000, guid: 222cfacc49898314c91a30df6593b700, type: 3}
+  volumeMultiplier: 1
+  bulletNameTag: Bullet
+  speed: 10
+  duration: 5
+  spread: 5
+  numberOfProjectilesPerShot: 1
+  multipleProjectilesAngel: 0
+  shootRange: 10
+  weaponSprite: {fileID: -1022324140503699289, guid: 2b892f1a8255d4b92bc26cf703a01a74, type: 3}
+  offset: {x: 0.1, y: 0, z: 0}
